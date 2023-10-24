@@ -1,6 +1,12 @@
 $(".info-nav").mousemove(function(){
-    $(".sub-nav").show(200)
+    $(".info-sub").show(200)
 })
 $(".info-nav").mouseleave(function(){
-    $(".sub-nav").hide(100)
+    $(".info-sub").hide(100)
+})
+$(".nutrition-nav").mousemove(function(){
+    $(".nutrition-sub").show(200)
+})
+$(".nutrition-nav").mouseleave(function(){
+    $(".nutrition-sub").hide(100)
 })
