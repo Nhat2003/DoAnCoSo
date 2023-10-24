@@ -271,11 +271,18 @@
     text-align: center;
     margin-bottom: 40px;
 }
+.paging .current {
+    border: 1px #198f00 solid;
+    color: #198f00 !important;
+    
+    border-radius: 5px;
+}
 
 .paging .page-numbers {
     padding: 3px 10px;
-    border: 1px transparent solid;
-    color: #444;
+    color: #000;
+   
+    
 
 }
 /* endpaging */
