@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f0efea;
+}
+
+
+
+
+
+
+.menu{
+    background-color: #f0efea;
+    padding-bottom: 50px;
+    padding: 0 150px;
+}  
+.header_menu img{
+    width: 94px;
+    height: 25px;
+}
+.header_menu h3{
+    font-size: 18px;
+    
+}
+.text{
+    color: #198f00;
+} 
+
+.menu .explore{
+    padding-top: 50px;
+}
+.menu .explore .heading-explore{
+    color: #333;
+    font-weight: 500;
+}
+.menu .explore .item-explore{
+    padding: 26px;
+    position: relative;
+}
+.menu .item-explore img{
+    width: 100%;
+    height: 170px;
+}
+.menu .item-explore .text-2{
+    background-color: #fff;
+    padding: 16px;
+}
+.menu .item-explore a{
+    text-decoration: none;
+}
+.menu .item-explore h3{
+    font-size: 17px;
+    color: #fff;
+}
+.menu .item-explore p{
+    display: inline-block;
+    color: #fff;
+    padding-top: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+.menu .item-explore i{
+    padding: 4px;
+}
+.menu .text-2 h3{
+    color: #198f00;
+}
+.menu .text-2 p{
+    color: #198f00;
+}
+.menu .item-explore .btn-like{
+    display: none;
+    color: #198f00;
+    font-size: 20px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    box-shadow: 0px 0px 8px 0 #4d4d4b;
+    animation: displayBtnLike1 ease .5s, displayBtnLike2 ease .5s .5s forwards;
+}
+.menu .item-explore .btn-like:hover{
+    cursor: pointer;
+    background-color: #198f00;
+    color: #fff;
+}
+.menu .item-explore:hover .btn-like{
+    display: block;
+}
+
+.paging {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.paging a{
+    text-decoration: none;
+}
+
+.paging .current {
+    border: 1px #198f00 solid;
+    color: #198f00 !important;
+    
+    border-radius: 5px;
+}
+
+.paging .page-numbers {
+    padding: 3px 10px;
+    color: #000;
+
+}
+
+.page-numbers:hover{
+    color: #1f9d06;
+}

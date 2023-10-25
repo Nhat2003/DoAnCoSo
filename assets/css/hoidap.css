@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none !important;
 }
 
 .color-green {
@@ -202,97 +201,55 @@
     color: #198f00;
 }
 
-/* endHeader */
-.dinhduong a {
+/* HEADER */
 
-    text-decoration: none;
+
+/* Conetent */
+.popular-search{
+    text-align: start;
+    margin: 50px 0;
 }
-
-.cursen {
-    width: 635px;
-    position: relative;
-}
-
-.cursen-text {
-    color: #fff;
-    background: url(/assets/img/bg-black-transparent.png.webp) center center;
-    background-size: contain;
-    position: absolute;
-    top: 47%;
-    height: 240px;
+.text-right{
     display: flex;
-    align-items: flex-end;
-    padding: 0 10px;
+    justify-content: flex-end;
 }
-
-.baiviet {
-    border-bottom: solid 1px#c2c2c2;
-    padding-bottom: 10px;
-}
-
-.list-food {
-    height: 415px;
-    overflow-y: scroll;
-
-}
-
-.list-food-item {
-    margin: 30px 0px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.list-food-item-text:hover {
-color: #1f9d06;
-}
-
-.list-food-item-image img {
-    width: 124px;
-    height: 74px;
-    margin-right: 25px;
-}
-
-.tindocnhieu-bottom a {
-    text-decoration: none;
-    color: black;
-    margin: 10px 0;
-}
-
-.tindocnhieu-bottom a:hover {
-    color: #1f9d06;
-}
-
-.tindocnhieu-bottom a h5 {
-    margin: 15px 0;
-}
-
-.tindocnhieu-bottom p {
-    color: rgb(93, 93, 93);
-}
-
-/* paginggg */
-.paging {
-    text-align: center;
+.list-question{
+    margin-top: 10px;
     margin-bottom: 40px;
 }
-.paging .current {
-    border: 1px #198f00 solid;
-    color: #198f00 !important;
+
+.question-item{
+    background-color: #f0f0f0;
+    border-radius: 1 0px;
     
-    border-radius: 5px;
+}
+.vertical-hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* Thời gian chuyển đổi và hiệu ứng */
+}
+#daucong{
+    margin-right: 5px;
+}
+.button-common{
+        border: 0;
+        background: #f0f0f0;
+        display: flex;
+        margin: 0  10px;
+        padding: 10px 0;
+        align-items: center;
+}
+.cardbody{
+    max-height: auto;
+    padding: 1.2rem 1.8rem;
+    transition: 0.2s;
 }
 
-.paging .page-numbers {
-    padding: 3px 10px;
-    color: #000;
+/* End Content */
 
-}
 
-.page-numbers:hover{
-    color: #1f9d06;
-}
-/* endpaging */
-/* footer */
+/* FOOTER */
 .footer .footer-top {
     height: 64px;
     padding: 15px;
@@ -333,4 +290,5 @@ color: #1f9d06;
     margin: 0;
     color: #fff;
 }
-/* endfooter */
+
+/* FOOTER */
