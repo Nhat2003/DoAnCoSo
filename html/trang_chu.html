@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/trang_chu.css">
     <title>Trang chủ dinh dưỡng</title>
@@ -113,7 +118,7 @@
                     <h1>Món ăn dinh dưỡng</h1>
                     <p>Kho tàng món ngon với các công thức dễ làm, hấp dẫn và bổ dưỡng, kết tinh từ tâm huyết của đội ngũ đầu bếp chuyên nghiệp.</p>
                     <p>Với sự hướng dẫn tỉ mỉ của các đầu bếp việc nấu ăn sẽ trở lên thật dễ dàng với mỗi chúng ta. Giúp bữa ăn của gia đình bạn trở lên ngon miệng và đầy đủ năng lượng dinh dưỡng cho một ngày dài.</p>
-                    <a href="">Xem thêm</a>
+                    <a class="view-all" href="">Xem thêm</a>
                 </div>
             </div>
             <div class="explore container">
@@ -128,6 +133,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>45</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                     <div class="item-explore col">
                         <a href="">
@@ -138,6 +144,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>43</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                     <div class="item-explore col">
                         <a href="">
@@ -148,6 +155,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>41</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                     <div class="item-explore col">
                         <a href="">
@@ -158,6 +166,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>43</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                 </div>
                 <div class="list-explore row">
@@ -170,6 +179,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>38</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                     <div class="item-explore col">
                         <a href="">
@@ -180,6 +190,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>37</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                     <div class="item-explore col">
                         <a href="">
@@ -190,6 +201,7 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>40</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                     <div class="item-explore col">
                         <a href="">
@@ -200,8 +212,135 @@
                                 <p class="like"><i class="fa-regular fa-heart"></i>43</p>
                             </div>
                         </a>
+                        <i class="fa-regular fa-heart btn-like"></i>
                     </div>
                 </div>
+                <a class="view-all" href="">Xem thêm</a>
+            </div>
+            <div class="poster">
+                <a href="">
+                    <img src="/assets/img/k-poster-trang-chu.jpg" alt="">
+                </a>
+            </div>
+            <div class="eat-today container">
+                <div class="title">
+                     <div class="icon-title">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span></span>
+                     </div>
+                     <h2>HÔM NAY BẠN ĂN GÌ?</h2>
+                     <p>Để trả lời cho câu hỏi trên, hãy cùng <b>Món ăn dinh dưỡng</b> lướt qua thực đơn hôm nay để khám phá những công thức “cực phẩm” mà vô cùng giản đơn.</p>
+                </div>
+                <div class="eat-today-slider">
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/mon-haptiem-1.jpg.webp" alt="">
+                            <a style="background-color: #790fe2;" href="">Món hấp/Tiềm</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-chien-1.jpg" alt="">
+                            <a style="background-color: #0d79e5;" href="">Món chiên</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-nuong-1.jpg" alt="">
+                            <a style="background-color: #a7c609;" href="">Món nướng</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-quay-roti-1.jpg" alt="">
+                            <a style="background-color: #e29734;" href="">Món quay/Rôti</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-khac-1.jpg" alt="">
+                            <a style="background-color: #f7941d;" href="">Cách nấu khác</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-kho-1.jpg" alt="">
+                            <a style="background-color: #dd9933;" href="">Món kho</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-rim-1.jpg" alt="">
+                            <a style="background-color: #eec219;" href="">Món om/Rim</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-canh-1.jpg" alt="">
+                            <a style="background-color: #88c14c;" href="">Món canh/Súp</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-xao-1.jpg" alt="">
+                            <a style="background-color: #0b10a5;" href="">Món xào</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-lau-1.jpg" alt="">
+                            <a style="background-color: #cc0000;" href="">Món lẩu</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/mon-ham-1.jpg.webp" alt="">
+                            <a style="background-color: #db32a5;" href="">Món hầm</a>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="item-slider">
+                            <img src="/assets/img/k-mon-goi-1.jpg" alt="">
+                            <a style="background-color: #0cd130;" href="">Món gỏi/Trộn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="family container">
+                <div class="title">
+                    <div class="icon-title">
+                        <i class="fa-solid fa-users"></i>
+                       <span></span>
+                    </div>
+                    <h2>GIA ĐÌNH MÌNH ĂN GÌ?</h2>
+                    <p>Các bạn ơi, hãy để <b>Món ăn dinh dưỡng</b> chăm sóc từng thành viên trong gia đình bạn bằng những món ăn hợp khẩu vị của mỗi cá nhân. </p>
+               </div>
+               <div class="list-family row">                    
+                    <div class="item-family col">
+                        <a href="">
+                            <img src="/assets/img/k-mon-nguoi-lon-tuoi.jpg" alt="">
+                        </a>
+                        <a class="btn-family" href="">Người lớn tuổi</a>
+                    </div>
+                    <div class="item-family col">
+                        <a href="">
+                            <img src="/assets/img/k-mon-chobo-1.jpg" alt="">
+                        </a>
+                        <a class="btn-family" href="">Món ăn cho cha</a>
+                    </div>
+                    <div class="item-family col">
+                        <a href="">
+                            <img src="/assets/img/k-mon-chome-1.jpg" alt="">
+                        </a>
+                        <a class="btn-family" href="">Món ăn cho mẹ</a>
+                    </div>
+                    <div class="item-family col">
+                        <a href="">
+                            <img src="/assets/img/k-mon-chobe-1.jpg" alt="">
+                        </a>
+                        <a class="btn-family" href="">Món ăn cho bé</a>
+                    </div>
+               </div>
             </div>
         </div>
         <!-- CONTENT -->
@@ -223,6 +362,30 @@
         <!-- FOOTER -->
     </div>
     <script src="/jquery/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.eat-today-slider').slick({
+                slidesToShow: 4,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToScroll: 1,
+                prevArrow:"<button type='button' class='slick-prev pull-left btn-slide btn-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next pull-right btn-slide btn-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+        });
+    </script>
 </body>
 </html>
