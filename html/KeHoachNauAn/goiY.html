@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="/assets/css/trang_chu.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="/assets/css/KeHoachNauAn/goiY.css">
-    <title>Trang chủ dinh dưỡng</title>
+    <title>Kế hoạch nấu ăn</title>
 </head>
 <body>
     <div class="main">
@@ -61,9 +62,9 @@
             </div>
             <div class="search-bar">
                 <div class="content-search-bar">
-                    <div class="left">
+                    <!-- <div class="left">
                         <img src="/assets/img/dau-bep-home.png.webp" alt="">
-                    </div>
+                    </div> -->
                     <div class="right">
                         <div class="right-top">
                             <h5>Tìm kiếm công thức, nguyên liệu, cách nấu, dịp nấu,...</h5>
@@ -83,31 +84,83 @@
         </div>
         <!-- HEADER -->
         <!-- CONTENT -->
+        <!-- navbarkehoach -->
             <div id="content">
                 <ul class="navbarkehoach">
                     <li class="active">
-                        <a href="/mon-ngon-goi-y/" title="món ngon mỗi ngày gợi ý"><picture>
-            <source type="image/webp" srcset="https://monngonmoingay.com/wp-content/themes/monngonmoingay/images/icon-goi-y-active.png.webp">
-            <img width="38" height="25" src="https://monngonmoingay.com/wp-content/themes/monngonmoingay/images/icon-goi-y-active.png" alt="món ngon mỗi ngày gợi ý">
-            </picture>
-             <span class="text-bar-kehoach"> Món Ngon Mỗi Ngày gợi ý</span>
+                        <a href="">
+                            <img src="/assets/img/T-icon1.webp" alt="">
+                            <span>Món ngon mỗi ngày gợi ý</span>
                         </a>
-                    </li>          
-                    <li>
-                        <a href="/cong-thuc-da-luu/" title="công thức yêu thích"><picture>
-            <source type="image/webp" srcset="https://monngonmoingay.com/wp-content/themes/monngonmoingay/images/icon-yeuthich.png.webp">
-            <img width="38" height="25" src="https://monngonmoingay.com/wp-content/themes/monngonmoingay/images/icon-yeuthich.png" alt="công thức yêu thích">
-            </picture>
-             <span class="text-bar-kehoach">Công thức yêu thích</span></a>
                     </li>
+
                     <li>
-                        <a href="/ke-hoach-nau-an/" id="#btnlogin" data-toggle="modal" data-target="#loginModal" title="1 tuần của bạn"><picture>
-            <source type="image/webp" srcset="https://monngonmoingay.com/wp-content/themes/monngonmoingay/images/icon-tuan.png.webp">
-            <img width="38" height="25" src="https://monngonmoingay.com/wp-content/themes/monngonmoingay/images/icon-tuan.png" alt="1 tuần của bạn">
-            </picture>
-             <span class="text-bar-kehoach">1 tuần của bạn</span></a>
+                        <a href="">
+                            <img src="/assets/img/T-icon2.webp" alt="">
+                            <span>Công thức yêu thích</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="/assets/img/T-icon3.webp" alt="">
+                            <span>Một tuần của bạn</span>
+                        </a>
                     </li>
                 </ul>
+
+                <!-- headerGoiy -->
+                <div class="header-goiY grid wide">
+                    <div class="row-goiY row">
+                        <div class="col l-9">
+                            <div class="col9-goiY">
+                                <img src="/assets/img/T-icon4.webp" alt="">
+                                <h1>Món Ngon Mỗi Ngày gợi ý</h1>
+                                <div class="icon-social">
+                                    <span>Chia sẻ:</span>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                                <p class="col9-text">Không tốn thời gian suy nghĩ "Hôm nay ăn gì?" - Cùng lên kế hoạch nấu ăn cho cả tuần để vào bếp nhàn tênh!</p>
+                                <div class="tool">
+                                    <div class="row">
+                                        <div class="col l-2">
+                                            <div class="col2-icon">
+                                                <i class="fa-solid fa-arrow-left"></i>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4">
+                                            <div class="date row">
+                                                <div class="col l-3">
+                                                    <span>Chọn</span>
+                                                </div>
+                                                <div class="col l-9">
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6">
+                                            <div class="col6-kehoach">
+                                                <a href="">
+                                                    <span>Tự lên kế hoạch tuần mới</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="col3-img">
+                                <img src="/assets/img/T-img_goiY1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         <!-- CONTENT -->
