@@ -1,4 +1,348 @@
 .content{
-    height: 300px;
     background-color: #f0efea;
+    padding-bottom: 50px;
+}
+.content .popular-search{
+    text-align: center;
+}
+.content .popular-search h2{
+    font-size: 18px;
+    padding: 16px;
+    text-transform: uppercase;
+    color: #333;
+    margin: 0;
+}
+.content .popular-search .tag{
+    display: flex;
+    justify-content: center;
+}
+.popular-search .tag a{
+    text-decoration: none;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 50px;
+    transition: all .2s ease;
+    color: #fff;
+}
+.popular-search .tag a + a{
+    margin-left: 8px;
+}
+.popular-search .tag .mon-chay{
+    background-color: #51bca2;
+}
+.popular-search .tag .an-vat{
+    background-color: #ff981e;
+}
+.popular-search .tag .com-trua{
+    background-color: #6161ba;
+}
+.popular-search .tag .mon-a{
+    background-color: #a66730;
+}
+.popular-search .tag .mon-au{
+    background-color: #88c14c;
+}
+.popular-search .tag .an-kieng{
+    background-color: #fd5c24;
+}
+.popular-search .tag .thuc-don{
+    background-color: #1b72c4;
+}
+.popular-search .tag .mon-nam{
+    background-color: #ba0bb4;
+}
+.popular-search .tag a:hover{
+    opacity: 0.6;
+}
+.content .menu-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.content .menu-search a{
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 2px solid #f0efea;
+    transition: all .3s ease;
+}
+.content .menu-search a:hover{
+    border-bottom: 2px solid #198f00;
+}
+.content .menu-search a + a{
+    margin-left: 32px;
+}
+.content .menu-search i{
+    padding-left: 4px;
+}
+.content .menu-search .nguyen-lieu{
+    color: #6161ba;
+}
+.content .menu-search .cach-nau{
+    color: #88c14c;
+}
+.content .menu-search .dip-le{
+    color: #cf0000;
+}
+.content .menu-search .mon-an{
+    color: #eec219;
+}
+.content .menu-search .gia-dinh{
+    color: #2797cb;
+}
+.content .menu-search .vung-mien{
+    color: #a66730;
+}
+.content .menu-search .xot-cham{
+    color: #ff981e;
+}
+.content .youtube{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content .youtube .youtube-img{
+    width: 50%;
+    background-color: #fff;
+}
+.content .youtube-img img{
+    width: 100%;
+}
+.content .youtube .youtube-intro{
+    width: 45%;
+}
+.content .youtube-intro img{
+    width: 94px;
+}
+.content .youtube-intro h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 16px 0 36px 0;
+    margin: 0;
+}
+.content .youtube-intro p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.view-all{
+    display: block;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    color: #198f00;
+    border: 1px solid #198f00;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all ease .3s;
+}
+.view-all:hover{
+    background-color: #198f00;
+    color: #fff;
+}
+.content .explore{
+    padding-top: 50px;
+}
+.content .explore .heading-explore{
+    color: #333;
+    font-weight: 500;
+}
+.content .explore .item-explore{
+    padding: 26px;
+    position: relative;
+}
+.content .item-explore img{
+    width: 100%;
+}
+.content .item-explore .text-1{
+    background-color: #198f00;
+    padding: 16px;
+}
+.content .item-explore .text-2{
+    background-color: #fff;
+    padding: 16px;
+}
+.content .item-explore a{
+    text-decoration: none;
+}
+.content .item-explore h3{
+    font-size: 17px;
+    color: #fff;
+}
+.content .item-explore p{
+    display: inline-block;
+    color: #fff;
+    padding-top: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+.content .item-explore i{
+    padding: 4px;
+}
+.content .text-2 h3{
+    color: #198f00;
+}
+.content .text-2 p{
+    color: #198f00;
+}
+.content .item-explore .btn-like{
+    display: none;
+    color: #198f00;
+    font-size: 20px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    box-shadow: 0px 0px 8px 0 #4d4d4b;
+    animation: displayBtnLike1 ease .5s, displayBtnLike2 ease .5s .5s forwards;
+}
+.content .item-explore .btn-like:hover{
+    cursor: pointer;
+    background-color: #198f00;
+    color: #fff;
+}
+.content .item-explore:hover .btn-like{
+    display: block;
+}
+@keyframes displayBtnLike1{
+    from{
+        opacity: 0.2;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+@keyframes displayBtnLike2{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.content .poster{
+    padding: 30px 0;
+}
+.content .poster img{
+    width: 100%;
+}
+.eat-today .icon-title,
+.family .icon-title{
+    position: relative;
+    width: 100px;
+}
+.eat-today .icon-title i,
+.family .icon-title i{
+    color: #198f00;
+    font-size: 24px;
+    padding: 4px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0efea;
+}
+.eat-today .icon-title span,
+.family .icon-title span{
+    position: absolute;
+    border: 2px solid #198f00;
+    width: 100%;
+    top: 50%;
+    z-index: 1;
+}
+.eat-today .title h2,
+.family .title h2{
+    padding-top: 30px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+.eat-today .eat-today-slider{
+    position: relative;
+}
+.eat-today .cover-item{
+    margin: 0 16px;
+}
+.eat-today .item-slider{
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+.eat-today .item-slider img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.eat-today .item-slider a{
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+    opacity: 0.6;
+}
+.eat-today .item-slider a:hover{
+    opacity: 1;
+}
+.eat-today .eat-today-slider .btn-slide{
+    padding: 8px;
+    color: #198f00;
+    background-color: #fff;
+    border: 1px solid #198f00;
+    border-radius: 4px;
+}
+.eat-today .eat-today-slider .btn-left{
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.eat-today .eat-today-slider .btn-right{
+    position: absolute;
+    top: 50%;
+    right: -3%;
+    transform: translateY(-50%);
+}
+.family {
+    padding-top: 60px;
+}
+.family .item-family{
+    padding: 0 0 30px 0;
+    background-color: #fff;
+    margin: 0 16px;
+    text-align: center;
+}
+.family .item-family img{
+    width: 100%;
+    margin-bottom: 32px;
+}
+.family .item-family .btn-family{
+    text-decoration: none;
+    color: #198f00;
+    padding: 8px 16px;
+    background-color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid #198f00;
+    transition: all .3s ease;
+}
+.family .item-family .btn-family:hover{
+    color: #fff;
+    background-color: #198f00;
 }
