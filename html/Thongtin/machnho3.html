@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mach nho page3</title>
-    <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
-    <link rel="stylesheet" href="/assets/css/machnho1.css">
-    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/machnho1.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
+    <title>Trang chủ dinh dưỡng</title>
 </head>
 <body>
-        <!-- header -->
-             <div class="header">
+    <div class="main">
+        <!-- HEADER -->
+        <div class="header">
             <div class="header-top container">
                 <div class="logo-header">
                     <a href="/html/trang_chu.html"></a>
@@ -34,13 +34,22 @@
                         <ul class="nav-bar">
                             <li><a  href="">Danh mục thực đơn</a></li>
                             <li><a  href="">Kế hoạch nấu ăn</a></li>
-                            <li><a  href="">Dinh dưỡng</a></li>
+                            <li class="nutrition-nav"><a  href="">Dinh dưỡng</a>
+                                <ul class="sub-nav nutrition-sub">
+                                    <li><a href="">Ăn kiêng</a></li>
+                                    <li><a href="">Tăng năng lượng</a></li>
+                                    <li><a href="">Tốt cho xương</a></li>
+                                    <li><a href="">Tốt cho da</a></li>
+                                    <li><a href="">Hỗ trợ miễn dịch</a></li>
+                                    <li><a href="">Khôi phục sau cảm</a></li>
+                                </ul>
+                            </li>
                             <li><a  href="">Giới thiệu</a></li>
                             <li class="info-nav"><a  href="">Thông tin hữu ích</a>
-                                <ul class="sub-nav">
+                                <ul class="sub-nav info-sub">
                                     <li><a href="">Thông tin MNMN</a></li>
-                                    <li><a href="">Mách nhỏ</a></li>
-                                    <li><a href="">Hỏi đáp</a></li>
+                                    <li><a href="./machnho1.html">Mách nhỏ</a></li>
+                                    <li><a href="./hoidap.html">Hỏi đáp</a></li>
                                     <li><a href="">Hỏi đầu bếp</a></li>
                                 </ul>
                             </li>
@@ -70,9 +79,10 @@
                 </div>
             </div>
         </div>
-        <!-- end header -->
-
-        <div class="main-content mt-5">
+        <!-- HEADER -->
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="main-content mt-5">
             <div class="container" style="max-width:1140px">
                 <div class="dinhduong d-flex gap-2 mb-5">
                     <a href="">Trang chủ</a>
@@ -171,12 +181,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/Nhat_tetdv.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-1.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Những món ăn không thể thiếu trong ngày đoàn viên</h5></a>
-                                <p>Bên cạnh những chiếc bánh trung thu thập cẩm hay bánh dẻo đậu xanh; thì thực đơn ngày Tết Trung Thu không thể...</p>
+                                <a href=""><h5>Bí quyết thái các loại thịt chuẩn, đẹp, đúng thớ</h5></a>
+                                <p>Thái thịt tuy không khó nhưng cũng không đơn giản chút nào đâu đó nha! Tùy món ăn mà mình sẽ có những kiểu...</p>
                             </div>
                         </div>
                     </div>
@@ -185,12 +195,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu2.png" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-2.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Cách chọn củ sen tươi ngon và phân biệt các loại</h5></a>
-                                <p>Từ xa xưa, củ sen là một nguyên liệu nấu ăn dân dã và bổ dưỡng được rất nhiều gia đình yêu thích đặc...</p>
+                                <a href=""><h5>Muốn mua hàu tươi ngon và sơ chế đúng cách thì làm theo mẹo này nha!</h5></a>
+                                <p>Hàu được rất nhiều người yêu thích vì hương vị vừa ngon ngọt mà còn nhiều chất dinh dưỡng. Tuy nhiên,...</p>
                             </div>
                         </div>
                     </div>
@@ -199,57 +209,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu3.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-3.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Gần 20 món ngon từ chả cá dễ làm thơm ngon khó cưỡng</h5></a>
-                                <p>Không chỉ dễ ăn, hương vị ngon mà cách làm chả cá cũng rất đơn giản và đa dạng. Chị em nội trợ chúng...</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                 <div class="row mt-5">
-                    <div class="col-sm-4">
-                        <div class="tindocnhieu">
-                            <div class="tindocnhieu-top">
-                                <a href="">
-                                    <img src="/assets/img/tindocnhieu4.jpg" alt="" width="100%" height="216">
-                                </a>
-                            </div>
-                            <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Nấu ăn chuẩn lành với thực đơn 3 món mới toanh cực kì dễ làm</h5></a>
-                                <p>Để có một bữa ăn ngon “đúng nghĩa” thì thực đơn hàng ngày nhà mình không chỉ cần có đa dạng các món,...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="tindocnhieu">
-                            <div class="tindocnhieu-top">
-                                <a href="">
-                                    <img src="/assets/img/tindocnhieu5.jpg" alt="" width="100%" height="216">
-                                </a>
-                            </div>
-                            <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Phổ tai là gì và cách chế biến món salad phổ tai thanh nhiệt cho ngày...</h5></a>
-                                <p>Nói đến món ăn thanh nhiệt cho những ngày nắng nóng là phải kể ngay đến phổ tai trong sâm bổ lượng, chè,…...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="tindocnhieu">
-                            <div class="tindocnhieu-top">
-                                <a href="">
-                                    <img src="/assets/img/tindocnhieu6.webp" alt="" width="100%" height="216">
-                                </a>
-                            </div>
-                            <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Bếp nhà mình đậm chất đồng nội với thực đơn toàn món ngon tuổi...</h5></a>
-                                <p>Không biết thi thoảng cả nhà mình có nhớ những món ăn đậm chất quê như cơm ngoại nấu lúc còn thơ ấu không...</p>
+                                <a href=""><h5>12 cách nấu món ngon từ hàu ai cũng làm được</h5></a>
+                                <p>Dành cho hội chị em là “fan chân chính” của hàu đây! Nếu như một ngày nào đó đi chợ gặp được những...</p>
                             </div>
                         </div>
                     </div>
@@ -261,12 +226,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu7.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-4.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>12 món canh chua cá ngon khiến cả nhà vét sạch nồi cơm</h5></a>
-                                <p>Cứ bữa cơm nào mà Mẹ nấu canh chua là nồi cơm nhà mình tự nhiên hết sạch chẳng còn hạt cơm nào luôn cả.....</p>
+                                <a href=""><h5>Thịt ba rọi đừng kho nữa, rim theo cách này bảo đảm tốn cơm lắm nè!</h5></a>
+                                <p>Nếu như đã chán với món thịt ba rọi kho truyền thống thường ngày, thì cứ mang đi rim cháy cạnh giống công...</p>
                             </div>
                         </div>
                     </div>
@@ -275,12 +240,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu8.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img//Nhat_tindocnhieu3-5.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>5 món vịt xào thơm ngon dễ làm để dành đãi khách</h5></a>
-                                <p>Thịt vịt không chỉ làm món ăn rất thơm ngon mà còn có chứa rất nhiều khoáng chất, chẳng hạn như khoáng...</p>
+                                <a href=""><h5>Bữa sáng nhanh với món sandwich nóng phô mai thịt nguội</h5></a>
+                                <p>Thêm một món ăn sáng ngon và nhanh gọn dành cho các chị em nội trợ vô cùng bận rộn đây! Với công thức làm...</p>
                             </div>
                         </div>
                     </div>
@@ -289,57 +254,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu9.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-6.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Cách chọn ếch ngon và sơ chế sao cho sạch, khử được mùi tanh</h5></a>
-                                <p>Thịt ếch chắc, dai ngọt là một món ăn ngon và rất giàu chất dinh dưỡng,… Đặc biệt là rất được các ông...</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                 <div class="row mt-5">
-                    <div class="col-sm-4">
-                        <div class="tindocnhieu">
-                            <div class="tindocnhieu-top">
-                                <a href="">
-                                    <img src="/assets/img/tindocnhieu10.jpg" alt="" width="100%" height="216">
-                                </a>
-                            </div>
-                            <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Om ếch với tỏi thế này mà ăn với cơm nóng ngon quá chừng luôn</h5></a>
-                                <p>Ếch xào lăn hay lùi rơm cũng ngon đấy, nhưng mà om ếch với tỏi như thế này mà ăn với cơm nóng thì phải gọi...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="tindocnhieu">
-                            <div class="tindocnhieu-top">
-                                <a href="">
-                                    <img src="/assets/img/tindocnhieu11.jpg" alt="" width="100%" height="216">
-                                </a>
-                            </div>
-                            <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Mẹo đơn giản khử mùi tanh đầu cá hồi để nấu canh chua ngon hơn</h5></a>
-                                <p>Phần đầu cá hồi mà đem nấu canh chua ngon ngọt mà còn chứa rất nhiều dinh dưỡng có lợi và tốt cho sức...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="tindocnhieu">
-                            <div class="tindocnhieu-top">
-                                <a href="">
-                                    <img src="/assets/img//tindocnhieu12.webp" alt="" width="100%" height="216">
-                                </a>
-                            </div>
-                            <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Lá cách – loại rau dại miền Tây dinh dưỡng nấu được nhiều món...</h5></a>
-                                <p>Nói đến các món ăn miền Tây thì phải nhắc ngay đến những loại rau dại dân dã nhưng có hương vị cực kì...</p>
+                                <a href=""><h5>Gợi ý 3 món Pancake mới dành cho Bé yêu nhà mình trong dịp nghỉ hè</h5></a>
+                                <p>Dịp hè chính là thời điểm cho Bé được vui chơi, giải trí sau những tháng học tập ở trường lớp và đương...</p>
                             </div>
                         </div>
                     </div>
@@ -351,12 +271,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu13.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-7.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Bánh rán kẹp cá ngừ cho cả nhà một bữa ăn sáng dinh dưỡng mà nhanh...</h5></a>
-                                <p>Với phần nhân cá ngừ đầy dinh dưỡng, trộn cùng Xốt Mayonnaise Aji-mayo® Vị Nguyên Bản beo béo mà Bé thích...</p>
+                                <a href=""><h5>5 món ngon từ rau má thanh mát cho mùa hè này!</h5></a>
+                                <p>Nếu như cả nhà đang cần một món rau thanh mát giải nhiệt cho thực đơn mùa hè năm nay thì nhất định phải...</p>
                             </div>
                         </div>
                     </div>
@@ -365,12 +285,12 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu14.jpg" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-8.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Những loại trái cây, rau củ tươi ngon vào mùa thu</h5></a>
-                                <p>Không chỉ có mùa hè mới có nhiều trái cây, rau củ quả ngon đâu, mà mùa thu cũng có rất nhiều thực phẩm dinh...</p>
+                                <a href=""><h5>Thực đơn hôm nay toàn là món ngon mà Ba thích</h5></a>
+                                <p>Bồi dưỡng cho Ba sau một tuần làm việc vất vả, Mẹ hãy cùng Món Ngon Mỗi Ngày vào bếp dành tặng cho Ba một...</p>
                             </div>
                         </div>
                     </div>
@@ -379,12 +299,102 @@
                         <div class="tindocnhieu">
                             <div class="tindocnhieu-top">
                                 <a href="">
-                                    <img src="/assets/img/tindocnhieu15.png" alt="" width="100%" height="216">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-9.jpg" alt="" width="100%" height="216">
                                 </a>
                             </div>
                             <div class="tindocnhieu-bottom">
-                                <a href=""><h5>Mê mẩn vị chua cay cóc non lắc với bạch tuộc và sa tế – món ngon...</h5></a>
-                                <p>Thêm một món ngon cho dân văn phòng và các chị nội trợ trẻ trung thích ăn vặt đây! Món bạch tuộc lắc cóc sa...</p>
+                                <a href=""><h5>Chọn mua nấm kim châm tươi ngon và sơ chế sao cho đúng cách</h5></a>
+                                <p>Nấm kim châm được rất nhiều người yêu thích vì hương vị giòn ngọt của chúng trong các món lẩu hay món...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="row mt-5">
+                    <div class="col-sm-4">
+                        <div class="tindocnhieu">
+                            <div class="tindocnhieu-top">
+                                <a href="">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-10.webp" alt="" width="100%" height="216">
+                                </a>
+                            </div>
+                            <div class="tindocnhieu-bottom">
+                                <a href=""><h5>Cách chọn măng cụt ngon không mất tiền oan</h5></a>
+                                <p>Măng cụt là một loại trái cây ngon mùa hè được rất nhiều người yêu thích và tìm mua. Hiện nay, loại trái...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="tindocnhieu">
+                            <div class="tindocnhieu-top">
+                                <a href="">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-11.jpg" alt="" width="100%" height="216">
+                                </a>
+                            </div>
+                            <div class="tindocnhieu-bottom">
+                                <a href=""><h5>Nấm kim châm đem chiên theo kiểu này, làm bao nhiêu cũng ăn hết</h5></a>
+                                <p>Nói đến nấm kim châm là cả nhà chắc chắn sẽ nghĩ ngay đến món bò cuộn nấm kim châm hay dùng kèm các món...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="tindocnhieu">
+                            <div class="tindocnhieu-top">
+                                <a href="">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-12.jpg" alt="" width="100%" height="216">
+                                </a>
+                            </div>
+                            <div class="tindocnhieu-bottom">
+                                <a href=""><h5>Mách nhỏ cho Mẹ cách làm món chiên giòn lâu hơn nè!</h5></a>
+                                <p>Có bao giờ Mẹ thắc mắc rằng: Làm thế nào mà các món chiên ở nhà hàng để lâu vẫn giòn rùm rụm không nè?...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="row mt-5">
+                    <div class="col-sm-4">
+                        <div class="tindocnhieu">
+                            <div class="tindocnhieu-top">
+                                <a href="">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-13.jpeg" alt="" width="100%" height="216">
+                                </a>
+                            </div>
+                            <div class="tindocnhieu-bottom">
+                                <a href=""><h5>Sơ chế cá trê làm sao để hết nhớt và cách chọn mua cá ngon</h5></a>
+                                <p>Cá trê là một trong những loại cá đồng được mọi người yêu thích nhất không chỉ vì hương vị thơm ngon,...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="tindocnhieu">
+                            <div class="tindocnhieu-top">
+                                <a href="">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-14.jpg" alt="" width="100%" height="216">
+                                </a>
+                            </div>
+                            <div class="tindocnhieu-bottom">
+                                <a href=""><h5>Cách làm 10 món xốt chấm siêu ngon lại đơn giản từ Món Ngon Mỗi Ngày</h5></a>
+                                <p>Các chị em nội trợ thường truyền tai nhau câu xốt chấm được xem là “linh hồn” của một món ăn ngon. Thế...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="tindocnhieu">
+                            <div class="tindocnhieu-top">
+                                <a href="">
+                                    <img src="/assets/img/Nhat_tindocnhieu3-15.jpg" alt="" width="100%" height="216">
+                                </a>
+                            </div>
+                            <div class="tindocnhieu-bottom">
+                                <a href=""><h5>13 món ngon từ bao tử, giòn giòn lai rai vài ly là đúng bài</h5></a>
+                                <p>Ba thích nhất là những món ngon từ bao tử giòn giòn, lai rai thêm vài ly cùng gia đình, bạn bè trong những ngày...</p>
                             </div>
                         </div>
                     </div>
@@ -394,7 +404,7 @@
                     <div class="row mt-4">
                         <div class="col-sm">
                             <div class="paging">
-                                <a class="page-numbers" href="">
+                                <a class="page-numbers" href="/html/Thongtin/machnho2.html">
                                     <i class="fa-solid fa-angle-left"></i>Trước
                                 </a>
                                 <a class="page-numbers" href="/html/Thongtin/machnho1.html">1</a>
@@ -414,9 +424,10 @@
 
             </div>
         </div>
-<!-- endpagging -->
-        <!-- foodter -->
-         <div class="footer">
+        </div>
+        <!-- CONTENT -->
+        <!-- FOOTER --> 
+        <div class="footer">
             <div class="footer-top">
                 <ul>
                     <li><a href="">Giới thiệu</a></li>
@@ -430,6 +441,9 @@
                 <img src="/assets/img/dmca-badge-w200-5x1-09.png" alt="">
             </div>
         </div>
-        <!-- endfooter -->
+        <!-- FOOTER -->
+    </div>
+    <script src="/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
