@@ -1,6 +1,5 @@
 .content{
     background-color: #f0efea;
-    padding-bottom: 50px;
 }
 .content .popular-search{
     text-align: center;
@@ -237,13 +236,11 @@
 .content .poster img{
     width: 100%;
 }
-.eat-today .icon-title,
-.family .icon-title{
+.icon-title{
     position: relative;
     width: 100px;
 }
-.eat-today .icon-title i,
-.family .icon-title i{
+.icon-title i{
     color: #198f00;
     font-size: 24px;
     padding: 4px;
@@ -254,16 +251,14 @@
     transform: translate(-50%, -50%);
     background-color: #f0efea;
 }
-.eat-today .icon-title span,
-.family .icon-title span{
+.icon-title span{
     position: absolute;
     border: 2px solid #198f00;
     width: 100%;
     top: 50%;
     z-index: 1;
 }
-.eat-today .title h2,
-.family .title h2{
+.title h2{
     padding-top: 30px;
     font-size: 20px;
     color: #333;
@@ -305,6 +300,10 @@
     border: 1px solid #198f00;
     border-radius: 4px;
 }
+.eat-today .eat-today-slider .btn-slide:hover{
+    color: #fff;
+    background-color: #198f00;
+}
 .eat-today .eat-today-slider .btn-left{
     position: absolute;
     top: 50%;
@@ -319,7 +318,7 @@
     transform: translateY(-50%);
 }
 .family {
-    padding-top: 60px;
+    padding: 60px 0;
 }
 .family .item-family{
     padding: 0 0 30px 0;
@@ -345,4 +344,89 @@
 .family .item-family .btn-family:hover{
     color: #fff;
     background-color: #198f00;
+}
+.content .sauce{
+    background: url("/assets/img/k-bg-monantrongthang.jpg") repeat-y left top;
+    background-size: 100% auto;
+    padding: 40px 0;
+}
+.content .sauce .title i{
+    background: none;
+}
+.sauce .item-sauce{
+    background-color: #fff;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+.sauce .item-sauce + .item-sauce{
+    margin-left: 32px;
+}
+.sauce .item-sauce img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sauce .item-sauce .btn-sauce{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #ff981f;
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+}
+.sauce .item-sauce .btn-sauce:hover{
+    opacity: 0.7;
+}
+.do-you-know {
+    background: url("/assets/img/k-bg-thong-tin-huu-ich-home.jpg") repeat-x center top;
+    padding: 30px 0;
+}
+.do-you-know .subtances-slider{
+    position: relative;
+    padding-top: 50px;
+}
+.do-you-know .subtances-slider .item-subtances{
+    margin-right: 32px;
+    background-color: #fff;
+    border: 1px solid #b9b6b6;
+    height: 430px;
+}
+.do-you-know .subtances-slider img{
+    width: 100%;
+    height: 60%;
+}
+.subtances-slider .btn-slide{
+    padding: 8px 16px;
+    color: #198f00;
+    border: 2px solid #198f00;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+.btn-slide:hover{
+    color: #fff;
+    background-color: #198f00;
+}
+.subtances-slider .btn-right{
+    top: 0;
+    right: 44px;
+}
+.subtances-slider .btn-left{
+    top: 0;
+    right: 100px;
+}
+.subtances-slider .item-subtances .text{
+    padding: 16px;
+}
+.subtances-slider .item-subtances a{
+    color: #198f00;
+    text-decoration: none;
+    font-size: 18px;
+}
+.subtances-img{
+    position: relative;
+}
+.subtances-img img{
+    width: 450px;
 }
