@@ -1,0 +1,321 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.color-green {
+    color: #198f00;
+}
+
+/* HEADER */
+.header-top {
+    display: flex;
+    height: 68px;
+    justify-content: space-between;
+}
+
+.header-top .logo-header {
+    width: 20%;
+    display: flex;
+}
+
+.header-top .logo-header>a {
+    display: block;
+    background-image: url("/assets/img/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    padding: 10%;
+}
+
+.header-top .logo-header .tag a {
+    text-decoration: none;
+}
+
+.header-top .logo-header .tag p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.header-top .nav-header .nav-header-top {
+    display: flex;
+    justify-content: end;
+    padding: 8px 12px 8px 0;
+}
+
+.nav-header .nav-header-top p {
+    margin: 0;
+    padding: 0 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-header .nav-header-top .login {
+    border-right: 2px solid #000;
+}
+
+.nav-header .nav-header-top p:hover {
+    color: #198f00;
+    cursor: pointer;
+}
+
+.nav-header .nav-header-bot .nav-bar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-header-bot .nav-bar>li {
+    padding: 4px 16px;
+}
+
+.nav-header-bot .nav-bar>li+li {
+    border-left: 2px solid #198f00;
+}
+
+.nav-header-bot .nav-bar li:hover>a {
+    opacity: 0.5;
+}
+
+.nav-header-bot .nav-bar a {
+    color: #198f00;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-header-bot .nav-bar .info-nav,
+.nav-header-bot .nav-bar .nutrition-nav {
+    position: relative;
+}
+
+.nav-header-bot .nav-bar .sub-nav {
+    position: absolute;
+    display: none;
+    padding: 0 16px;
+    list-style-type: none;
+    left: 0;
+    top: 100%;
+    background-color: #e8e5e5;
+}
+
+.nav-bar .sub-nav li {
+    padding: 8px 28px 8px 0;
+}
+
+.nav-bar .sub-nav li+li {
+    border-top: 1px solid #c1bebe;
+}
+
+.nav-bar .sub-nav a {
+    text-transform: none;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.header .search-bar {
+    height: 120px;
+    background-image: url(/assets/img/N-back-test.png);
+    margin-top: 16px;
+}
+
+.search-bar .content-search-bar {
+    width: 60%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.content-search-bar .left {
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.search-bar .content-search-bar img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar .right {
+    width: 80%;
+}
+
+.search-bar .right h5 {
+    color: #fff;
+    padding: 16px;
+    margin: 0;
+}
+
+.search-bar .right .right-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar .right-top i {
+    font-size: 28px;
+    color: #fff;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.search-bar .right-top i:hover {
+    color: #198f00;
+    background-color: #fff;
+}
+
+.search-bar .right .right-bot {
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar .right-bot i {
+    color: #198f00;
+    font-size: 20px;
+}
+
+.search-bar .right-bot i:hover {
+    cursor: pointer;
+}
+
+.search-bar .right-bot input {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.search-bar .right-bot input::placeholder {
+    color: #198f00;
+}
+
+/* HEADER */
+
+
+/* Conetent */
+.popular-search {
+    text-align: start;
+    margin: 50px 0;
+}
+
+.text-right {
+    
+    position: absolute;
+    right: 22%;
+     top: 15rem;
+    
+}
+.text-left img{
+    width: 100px;
+    margin-bottom: 17px;
+}
+.datch{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: #198f00;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 0;
+    
+}
+.datch-items{
+    margin: 13px 0;
+}
+
+.list-question {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.question-item {
+    background-color: #f0f0f0;
+    border-radius: 1 0px;
+
+}
+
+.vertical-hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* Thời gian chuyển đổi và hiệu ứng */
+}
+
+#daucong {
+    margin-right: 5px;
+}
+
+.button-common {
+    border: 0;
+    background: #f0f0f0;
+    display: flex;
+    margin: 0 10px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.cardbody {
+    max-height: auto;
+    padding: 1.2rem 1.8rem;
+    transition: 0.2s;
+}
+
+/* End Content */
+
+
+/* FOOTER */
+.footer .footer-top {
+    height: 64px;
+    padding: 15px;
+    background-color: #198f00;
+}
+
+.footer .footer-top ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-top ul li {
+    line-height: 34px;
+    padding: 0 12px;
+}
+
+.footer .footer-top ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .footer-top ul a:hover {
+    opacity: 0.7;
+}
+
+.footer .footer-bot {
+    background-color: #166f04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.footer .footer-bot p {
+    margin: 0;
+    color: #fff;
+}
+
+/* FOOTER */
