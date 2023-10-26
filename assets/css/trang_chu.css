@@ -59,16 +59,20 @@
     align-items: center;
     padding: 16px;
 }
-.content .menu-search a{
-    padding: 8px 0;
-    text-decoration: none;
+.content .menu-search ul{
+    list-style: none;
+    display: flex;
+}
+.content .menu-search li{
+    margin-left: 16px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
     border-bottom: 2px solid #f0efea;
     transition: all .3s ease;
+    position: relative;
 }
-.content .menu-search a:hover{
+.content .menu-search li:hover{
     border-bottom: 2px solid #198f00;
 }
 .content .menu-search a + a{
@@ -97,6 +101,58 @@
 }
 .content .menu-search .xot-cham{
     color: #ff981e;
+}
+.menu-search .sub-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    width: 500px;
+    padding: 8px;
+    z-index: 10;
+    border: 1px solid #198f00;
+}
+.menu-search li:hover .sub-menu{
+    display: block;
+}
+.menu-search .sub-menu .line-menu + .line-menu{
+    padding-top: 16px;
+    border-top: 1px solid #e5dfdf;
+}
+.menu-search .sub-menu h4{
+    font-size: 16px;
+    color: #198f00;
+}
+.menu-search .sub-menu a{
+    color: #333;
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-weight: 500;
+}
+.menu-search .sub-menu a:hover{
+    color: #198f00;
+}
+.menu-search .sub-menu i{
+    font-size: 6px;
+    color: #198f00;
+    padding-right: 12px;
+}
+.menu-search .cach-nau .sub-menu{
+    width: 300px;
+}
+.menu-search .mon-an .sub-menu,
+.menu-search .gia-dinh .sub-menu,
+.menu-search .vung-mien .sub-menu{
+    width: 200px;
+}
+.menu-search .mon-an .sub-menu a,
+.menu-search .gia-dinh .sub-menu a,
+.menu-search .vung-mien .sub-menu a{
+    display: block;
+    margin: 0;
+    padding-bottom: 8px;
 }
 .content .youtube{
     width: 70%;
@@ -154,7 +210,8 @@
     font-weight: 500;
 }
 .content .explore .item-explore{
-    padding: 26px;
+    margin: 26px;
+    padding: 0;
     position: relative;
 }
 .content .item-explore img{
