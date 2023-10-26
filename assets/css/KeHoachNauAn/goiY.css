@@ -171,6 +171,9 @@
 
 /* CONTENT */
 /* 1.navbarkehoach */
+#content{
+    margin-bottom: 100px;
+}
 #content .navbarkehoach{
     display: flex;
     justify-content: space-around;
@@ -249,7 +252,7 @@
 }
 .col9-goiY .col9-text {
     margin: 8px 0 24px;
-    font-size:14px
+    font-size:16px
 }
 
 
@@ -264,6 +267,18 @@
     border-color:#198f00 ;
     transition: all 0.2s ease;
 }
+
+.date span{
+    
+    line-height: 32px;
+}
+.date input{
+    width: 90%;
+    height: 32px;
+    border-radius: 4px;
+    padding: 12px;
+}
+
 .col6-kehoach a{
     text-decoration: none;
 }
@@ -285,6 +300,75 @@
     height: 245px;
     top: 0;
     right: 0;
+}
+
+/* table */
+.table-schedule table{
+    width: 100%;
+    color: #9d763f;
+}
+.table-schedule thead th{
+    text-align: center;
+    background: #9d763f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+    border-right: 2px #fff solid;
+    
+}
+.table-schedule tbody{
+    padding : 2px;
+}
+.table-schedule tbody td{
+    height: 100px;
+    margin: 4px;
+    border: 4px #fff solid;
+}
+
+.table-schedule .sang td{
+    position: relative;
+    background: #b2e1f3;
+    padding: 7px 7px 50px;
+    text-align: center;
+}
+
+.table-schedule .trua td{
+    position: relative;
+    background: #fdf5a4;
+    padding: 7px 7px 50px;
+    text-align: center;
+}
+
+.table-schedule .toi td{
+    position: relative;
+    background: #d4e5a1;
+    padding: 7px 7px 50px;
+    text-align: center;
+}
+
+.table-schedule .sang>td::after,
+.table-schedule .trua>td::after,
+.table-schedule .toi>td::after{
+    content: ' ';
+    width: 20px;
+    border-bottom: 3px #9d763f solid;
+    position: absolute;
+    bottom: 50%;
+    left: 42%;
+}
+
+
+.table-schedule .CT-daxem {
+    margin-top: 10px;
+}
+.table-schedule .CT-daxem span{
+    background: #a0a0a0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 24px;
+    text-align: center;
 }
 
 /* CONTENT */
