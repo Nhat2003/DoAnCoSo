@@ -79,8 +79,8 @@
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 15%;
-    right: 15%;
+    top: 10%;
+    right: 10%;
     box-shadow: 0px 0px 8px 0 #4d4d4b;
     animation: displayBtnLike1 ease .5s, displayBtnLike2 ease .5s .5s forwards;
 }
@@ -109,4 +109,18 @@
     to{
         transform: scale(1);
     }
+}
+
+.next-page{
+    text-align: center;
+    padding: 40px 0;
+}
+.next-page a{
+    text-decoration: none;
+    color: #333;
+    padding: 4px 10px;
+    transition: all .2s ease;
+}
+.next-page a:hover{
+    color: #198f00;
 }
