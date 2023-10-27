@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="/assets/css/TimKiemPhoBien/search_option.css">
     <link rel="stylesheet" href="/assets/css/trang_chu.css">
-    <link rel="stylesheet" href="/assets/css/grid.css">
-    <link rel="stylesheet" href="/assets/css/KeHoachNauAn/motTuan.css">
-    <title>Kế hoạch nấu ăn</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Món Miền Nam</title>
 </head>
 <body>
     <div class="main">
-        <!-- HEADER -->
-        <div class="header">
+         <!-- HEADER -->
+         <div class="header">
             <div class="header-top container">
                 <div class="logo-header">
                     <a href="/html/trang_chu.html"></a>
@@ -61,9 +64,9 @@
             </div>
             <div class="search-bar">
                 <div class="content-search-bar">
-                    <!-- <div class="left">
+                    <div class="left">
                         <img src="/assets/img/dau-bep-home.png.webp" alt="">
-                    </div> -->
+                    </div>
                     <div class="right">
                         <div class="right-top">
                             <h5>Tìm kiếm công thức, nguyên liệu, cách nấu, dịp nấu,...</h5>
@@ -438,159 +441,279 @@
         </div>
         <!-- HEADER -->
         <!-- CONTENT -->
-            <div id="content">
-                <ul class="navbarkehoach">
-                    <li>
-                        <a href="/html/KeHoachNauAn/goiY.html">
-                            <img src="/assets/img/T-icon1-2.webp" alt="">
-                            <span>Món ngon mỗi ngày gợi ý</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/html/KeHoachNauAn/CT_yeuthich.html">
-                            <img src="/assets/img/T-icon2.webp" alt="">
-                            <span>Công thức yêu thích</span>
-                        </a>
-                    </li>
-
-                    <li class="active">
-                        <a href="#">
-                            <img src="/assets/img/T-icon3-2.webp" alt="">
-                            <span>Một tuần của bạn</span>
-                        </a>
-                    </li>
-
-                </ul>
-                <div class="header-motTuan grid wide">
-                    <div class="row-motTuan row">
-                        <div class="col l-12">
-                            <div class="col12-motTuan">
-                                <img src="/assets/img/T-icon3-3.webp" alt="">
-                                <h1>1 tuần của bạn</h1>
-                                <div class="icon-social">
-                                    <span>Chia sẻ:</span>
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+        <div class="content">
+            <div class="menu">
+        
+                <div class="explore container">
+                    <div class="header_menu">
+                        <img src="/assets/img/hieu_logo.png" alt="">
+                        <h3>MÓN MIỀN NAM</h3>
+                        <span>Các món ngon miền Nam mang đậm tính dân dã, không cầu kỳ trong chế biến, không dùng nguyên liệu đắt đỏ và có vị ngọt đặc trưng. Cùng Món Ngon Mỗi Ngày nấu các món ngon miền Nam thơm ngon, đơn giản, đúng vị ngay nhé!</span>
+                        <p>Tìm thấy <b class="text"> 690 </b> Kết quả</p>
+                    </div>
+                    <div class="list-explore row">
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu1.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Chả lá xương sông</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>9 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>50</p>
                                 </div>
-                                <p class="col12-text">Chỉ cần 5 phút lên kế hoạch để cả tuần vào bếp thật dễ dàng và tiết kiệm!</p>
-                                <div class="tool">
-                                    <div class="row">
-                                        <div class="col l-2">
-                                            <div class="col2-icon">
-                                                <i class="fa-solid fa-arrow-left"></i>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col l-4">
-                                            <div class="date row">
-                                                <div class="col l-3">
-                                                    <span>Chọn</span>
-                                                </div>
-                                                <div class="col l-9">
-                                                    <input type="date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col l-6">
-                                            <div class="col6-kehoach">
-                                                <a href="">
-                                                    <span>Dùng thực đơn gợi ý</span>
-                                                    <span>Lưu thực đơn</span>
-                                                    <span>Tải kế hoạch</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu2.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Cá ngừ cuộn phô mai</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>8 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>43</p>
                                 </div>
-                            </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu3.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Ngưu bàng chiên tôm</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>7 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>46</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu4.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Viên thanh cua phô mai</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>5 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>45</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
                         </div>
                     </div>
-                </div>
-
-                <!-- note-goiy -->
-                <div class="grid wide">
-                    <div class="note-row row">
-                        <div class="col l-8">
-                            <div class="note-goiy">
-                                <i class="fa-solid fa-caret-up"></i>
-                                <span>Thực đơn cả tuần được gợi ý từ đầu bếp nhiều kinh nghiệm của Món Ngon Mỗi Ngày. Bạn vẫn có thể chỉnh sửa theo ý thích bằng cách: Xóa món trực tiếp trong bảng hoặc thêm bằng cách Kéo - Thả món ăn từ danh sách "Công thức đã lưu" bên phải màn hình vào bảng thực đơn</span>
-                            </div>
+        
+        
+                    <div class="list-explore row">
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu5.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Matcha cà phê</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>3 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>38</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
                         </div>
-                        <div class="col l-4">
-                            <div class="note-goiy2">
-                                <span>Tự lên kế hoạch của bạn bằng cách: Kéo - Thả món ăn từ danh sách "Công thức đã lưu" bên phải màn hình vào Bảng Thức Đơn theo ý muốn.</span>
-                            </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu6.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Tôm né bơ tỏi</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>2 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>37</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
                         </div>
-                    </div>
-                </div>
-
-                <!-- table-schedule-->
-                <div class="table-schedule grid wide">
-                    <div class="row">
-                        <div class="col l-10">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Thứ hai <br> 23/10/2023</th>
-                                        <th>Thứ ba <br> 24/10/2023</th>
-                                        <th>Thứ tư <br> 25/10/2023</th>
-                                        <th>Thứ năm <br> 26/10/2023</th>
-                                        <th>Thứ sáu <br> 27/10/2023</th>
-                                        <th>Thứ bảy <br> 28/10/2023</th>
-                                        <th>Chủ nhật <br> 29/10/2023</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr class="sang">
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                    </tr>
-                                    <tr class="trua">
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                    </tr>
-                                    <tr class="toi">
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu7.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Chôm chôm nhồi tôm chiên</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>11 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>75</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
                         </div>
-                        <div class="col l-2">
-                            <div class="CT-daluu">
-                                <select>
-                                    <option>Công thức đã lưu </option>
-                                    <option value="1">Bữa sáng</option>
-                                    <option value="2">Bữa trưa</option>
-                                    <option value="3">Bữa tối</option>
-                                </select>
-                            </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu8.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Salad mực măng tây</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>3 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>29</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
                         </div>
                     </div>
+        
+        
+        
+                    <div class="list-explore row">
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu9.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Pancake sốt đậu gà</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>8 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>38</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu10.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Bánh crepe nhân mặn</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>12 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>37</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu11.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Bê cuộn khìa nước dừa tươi</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>15 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>50</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu12.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Bánh cá ngừ mayonnaise</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>14 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>53</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                    </div>
+        
+                    <div class="list-explore row">
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu13.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Bánh rán hương mùa hè</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>38</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu14.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Bánh mì hạnh nhân</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>37</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu15.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Salad gà nướng</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>5 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>40</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu16.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Khoai tây nướng phô mai</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>3 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>43</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                    </div>
+        
+                    <div class="list-explore row">
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu17.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Cá hồi ngâm rau củ chua ngọt</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>5 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>38</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu18.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Salad cam đậu đỏ</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>47</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu19.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>Vịt nấu ragu</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>5 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>44</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                        <div class="item-explore col">
+                            <a href="">
+                                <img src="/assets/img/T-monAu20.jfif" alt="">
+                                <div class="text-2">
+                                    <h3>snake phồng tôm rau củ</h3>
+                                    <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                    <p class="like"><i class="fa-regular fa-heart"></i>23</p>
+                                </div>
+                            </a>
+                            <i class="fa-regular fa-heart btn-like"></i>
+                        </div>
+                    </div>       
+             <!-- menu -->
+        
+            
+        
+        </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm">
+                <div class="paging">
+                    <a class="page-numbers" href="">
+                        <i class="fa-solid fa-angle-left"></i>Trước
+                    </a>
+                    <a class="page-numbers" href="/html/TimKiemPhoBien/monMienNam/monMienNam1.html">1</a>
+                    <a class="page-numbers current" href="/html/TimKiemPhoBien/monMienNam/monMienNam2.html">2</a>
+                    <a class="page-numbers" href="/html/TimKiemPhoBien/monMienNam/monMienNam3.html">3</a>
+                    <span class="page-numbers">...</span>
+                    <a class="page-numbers" href="/html/TimKiemPhoBien/monMienNam/monMienNam1.html">34</a>
+                    <a class="page-numbers" href="/html/TimKiemPhoBien/monMienNam/monMienNam2.html">35</a>
+                    <a class="page-numbers" href="">
+                      Tiếp  <i class="fa-solid fa-angle-right"></i>
+                    </a>
+    
                 </div>
-
             </div>
+        </div>
         <!-- CONTENT -->
-
         <!-- FOOTER --> 
         <div class="footer">
             <div class="footer-top">
@@ -609,6 +732,30 @@
         <!-- FOOTER -->
     </div>
     <script src="/jquery/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.eat-today-slider').slick({
+                slidesToShow: 4,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToScroll: 1,
+                prevArrow:"<button type='button' class='slick-prev pull-left btn-slide btn-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next pull-right btn-slide btn-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+        });
+    </script>
 </body>
 </html>
