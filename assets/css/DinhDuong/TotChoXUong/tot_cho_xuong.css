@@ -1,0 +1,126 @@
+.content{
+    background-color: #f0efea;
+    padding-top: 40px;
+}
+.content .cover-content{
+    padding: 0;
+}
+.content .title-content img{
+    width: 94px;
+}
+.content .title-content h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 16px 0;
+    margin: 0;
+}
+.content .title-content .ktv{
+    text-align: right;
+    font-size: 16px;
+    font-style: italic;
+}
+.content .explore{
+    padding-top: 50px;
+}
+.content .explore .list-explore + .list-explore{
+    margin-top: 52px;
+}
+.content .explore .heading-explore{
+    color: #333;
+    font-weight: 500;
+}
+.content .explore .item-explore{
+    padding: 0;
+    position: relative;
+    margin: 0 12px;
+}
+.content .explore .item-explore + .item-explore{
+    margin-left: 60px;
+}
+.content .item-explore img{
+    width: 100%;
+}
+.content .item-explore .text-1{
+    background-color: #198f00;
+    padding: 16px;
+}
+.content .item-explore .text-2{
+    background-color: #fff;
+    padding: 16px;
+}
+.content .item-explore a{
+    text-decoration: none;
+}
+.content .item-explore h3{
+    font-size: 17px;
+    color: #fff;
+}
+.content .item-explore p{
+    display: inline-block;
+    color: #fff;
+    padding-top: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+.content .item-explore i{
+    padding: 4px;
+}
+.content .text-2 h3{
+    color: #198f00;
+}
+.content .text-2 p{
+    color: #198f00;
+}
+.content .item-explore .btn-like{
+    display: none;
+    color: #198f00;
+    font-size: 20px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    box-shadow: 0px 0px 8px 0 #4d4d4b;
+    animation: displayBtnLike1 ease .5s, displayBtnLike2 ease .5s .5s forwards;
+}
+.content .item-explore .btn-like:hover{
+    cursor: pointer;
+    background-color: #198f00;
+    color: #fff;
+}
+.content .item-explore:hover .btn-like{
+    display: block;
+}
+@keyframes displayBtnLike1{
+    from{
+        opacity: 0.2;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+@keyframes displayBtnLike2{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.next-page{
+    text-align: center;
+    padding: 40px 0;
+}
+.next-page a{
+    text-decoration: none;
+    color: #333;
+    padding: 4px 10px;
+    transition: all .2s ease;
+}
+.next-page a:hover{
+    color: #198f00;
+}

@@ -1,0 +1,8 @@
+.next-page .before{
+    display: none;
+}
+.next-page .page-1{
+    color: #198f00;
+    border: 1px solid #198f00;
+    border-radius: 4px;
+}
