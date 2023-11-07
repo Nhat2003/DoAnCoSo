@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/gioi_thieu.css">
+    <title>Giới thiệu</title>
+</head>
+<body>
+    <div class="main">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-top container">
+                <div class="logo-header">
+                    <a href="/html/trang_chu.html"></a>
+                    <div class="tag">
+                        <a href="/html/trang_chu.html">
+                            <p class="color-green">#Nấu <br> Chuẩn <br> Ăn <br> Lành</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-header">
+                    <div class="nav-header-top">
+                        <p class="login">Đăng nhập</p>
+                        <p class="sigin">Đăng ký</p>
+                    </div>
+                    <div class="nav-header-bot">
+                        <ul class="nav-bar">
+                            <li><a  href="/html/thuc_don.html">Danh mục thực đơn</a></li>
+                            <li><a  href="/html/KeHoachNauAn/goiY.html">Kế hoạch nấu ăn</a></li>
+                            <li class="nutrition-nav"><a>Dinh dưỡng</a>
+                                <ul class="sub-nav nutrition-sub">
+                                    <li><a href="/html/DinhDuong/AnKieng/an_kieng.html">Ăn kiêng</a></li>
+                                    <li><a href="/html/DinhDuong/TangNangLuong/tang_nang_luong.html">Tăng năng lượng</a></li>
+                                    <li><a href="/html/DinhDuong/TotChoXuong/to_cho_xuong.html">Tốt cho xương</a></li>
+                                    <li><a href="/html/DinhDuong/TotChoDa/tot_cho_da.html">Tốt cho da</a></li>
+                                    <li><a href="/html/DinhDuong/HoTroMienDich/ho_tro_mien_dich.html">Hỗ trợ miễn dịch</a></li>
+                                    <li><a href="/html/DinhDuong/HoiPhucSauCam/hoi_phuc_sau_cam.html">Khôi phục sau cảm</a></li>
+                                </ul>
+                            </li>
+                            <li><a  href="">Giới thiệu</a></li>
+                            <li class="info-nav"><a  href="./Thongtin/machnho1.html">Thông tin hữu ích</a>
+                                <ul class="sub-nav info-sub">
+                                    <li><a href="./Thongtin/machnho1.html">Mách nhỏ</a></li>
+                                    <li><a href="./Thongtin/hoidap.html">Hỏi đáp</a></li>
+                                    <li><a href="./Thongtin/hoidaubep.html">Hỏi đầu bếp</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="content-search-bar">
+                    <div class="left">
+                        <img src="/assets/img/dau-bep-home.png.webp" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="right-top">
+                            <h5>Tìm kiếm công thức, nguyên liệu, cách nấu, dịp nấu,...</h5>
+                            <div class="icon-right-top">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="right-bot">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Nhập tại đây">
+                            <i class="fa-solid fa-bars-staggered open-box-search"></i>
+                        </div>
+                        <div class="box-search">
+                            <ul>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #6161ba;">Nguyên liệu</h3>
+                                        <i class="fa-solid fa-plus" style="color: #6161ba;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #6161ba;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <h4>Thịt</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="thit-heo" name="thit-heo" value="">
+                                                <label for="thit-heo">Thị heo</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="thit-ga" name="thit-ga" value="">
+                                                <label for="thit-ga">Thị gà</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="thit-bo" name="thit-bo" value="">
+                                                <label for="thit-bo">Thị bò</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="thi-khac" name="thit-khac" value="">
+                                                <label for="thit-khac">Khác</label>
+                                            </div>
+                                        </div>
+                                        <div class="item-line">
+                                            <h4>Hải sản</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="ca" name="ca" value="">
+                                                <label for="ca">Cá</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="tom" name="tom" value="">
+                                                <label for="tom">Tôm</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="muc" name="muc" value="">
+                                                <label for="muc">Mực/Bạch tuộc</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="haisan-khac" name="haisan-khac" value="">
+                                                <label for="haisan-khac">Khác</label>
+                                            </div>
+                                        </div>
+                                        <div class="item-line">
+                                            <h4>Rau củ quả</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="rau" name="rau" value="">
+                                                <label for="rau">Các loại rau</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="cu-qua" name="cu-qua" value="">
+                                                <label for="cu-qua">Củ quả</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="nam" name="nam" value="">
+                                                <label for="nam">Nấm</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="ca-chua" name="ca-chua" value="">
+                                                <label for="ca-chua">Cà chua</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="ca-rot" name="ca-rot" value="">
+                                                <label for="ca-rot">Cà rốt</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="rau-khac" name="rau-khac" value="">
+                                                <label for="rau-khac">Khác</label>
+                                            </div>
+                                        </div>
+                                        <div class="item-line">
+                                            <h4>Tinh bột</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="pho" name="pho" value="">
+                                                <label for="pho">Phở/Bún/Hủ tiếu/Miến</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="banh-mi" name="banh-mi" value="">
+                                                <label for="banh-mi">Bánh mì</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="gao" name="gao" value="">
+                                                <label for="gao">Gạo</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="tb-khac" name="tb-khac" value="">
+                                                <label for="tb-khac">Khác</label>
+                                            </div>
+                                        </div>
+                                        <div class="item-line">
+                                            <h4>Khác</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="trung" name="trung" value="">
+                                                <label for="trung">Trứng</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="dau-hu" name="dau-hu" value="">
+                                                <label for="dau-hu">Đậu hũ</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="khac" name="khac" value="">
+                                                <label for="khac">Khác</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #88c14c;">Cách nấu</h3>
+                                        <i class="fa-solid fa-plus" style="color: #88c14c;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #88c14c;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <div class="select">
+                                                <input type="checkbox" id="lau"  name="lau" value="">
+                                                <label for="lau">Lẩu</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="ham"  name="ham" value="">
+                                                <label for="ham">Hầm</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="goi-tron"  name="goi-tron" value="">
+                                                <label for="goi-tron">Gỏi/Trộn</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="hap-tiem"  name="hap-tiem" value="">
+                                                <label for="hap-tiem">Hấp/Tiềm</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="chien"  name="chien" value="">
+                                                <label for="chien">Chiên</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="kho"  name="kho" value="">
+                                                <label for="kho">Kho</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="om-rim"  name="om-rim" value="">
+                                                <label for="om-rim">Om/Rim</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="canh-sup"  name="canh-sup" value="">
+                                                <label for="canh-sup">Canh/Súp</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="xao"  name="xao" value="">
+                                                <label for="xao">Món xào</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="nuong"  name="nuong" value="">
+                                                <label for="nuong">Món nướng</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="quay"  name="quay" value="">
+                                                <label for="quay">Quay/Rôti</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="cn-khac"  name="cn-khac" value="">
+                                                <label for="cn-khac">Khác</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #cf0000;">Dịp lễ</h3>
+                                        <i class="fa-solid fa-plus" style="color: #cf0000;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #cf0000;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <h4>Ngày</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="bua-sang" name="bua-sang" value="">
+                                                <label for="bua-sang">Bữa sáng</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="bua-trua" name="bua-trua" value="">
+                                                <label for="bua-trua">Bữa trưa</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="bua-toi" name="bua-toi" value="">
+                                                <label for="bua-toi">Bữa tối</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="cuoi-tuan" name="cuoi-tuan" value="">
+                                                <label for="cuoi-tuan">Cuối tuần</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="hang-ngay" name="hang-ngay" value="">
+                                                <label for="hang-ngay">Thực đơn hàng ngày</label>
+                                            </div>
+                                        </div>
+                                        <div class="item-line">
+                                            <h4>Lễ tiệc</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="ngay-he" name="ngay-he" value="">
+                                                <label for="ngay-he">Ngày hè</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="hoa-trang" name="hoa-trang" value="">
+                                                <label for="hoa-trang">Lễ hội hoá trang</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="sinh-nhat" name="sinh-nhat" value="">
+                                                <label for="sinh-nhat">Sinh nhật</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="giang-sinh" name="giang-sinh" value="">
+                                                <label for="giang-sinh">Giáng sinh</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="tet" name="tet" value="">
+                                                <label for="tet">Tết</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="le-khac" name="le-khac" value="">
+                                                <label for="le-khac">Khác</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #eec219;">Món ăn</h3>
+                                        <i class="fa-solid fa-plus" style="color: #eec219;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #eec219;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <div class="select">
+                                                <input type="checkbox" id="mon-man" name="mon-man" value="">
+                                                <label for="mon-man">Món mặn</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="mon-nhau" name="mon-nhau" value="">
+                                                <label for="mon-nhau">Món nhậu</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="mon-chay" name="mon-chay" value="">
+                                                <label for="mon-chay">Món chay</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="mon-phu" name="mon-cphu" value="">
+                                                <label for="mon-phu">Các món ăn kém, món phụ</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="ăn-vat" name="an-vat" value="">
+                                                <label for="an-vat">Ăn vặt</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #2797cb;">Gia đình</h3>
+                                        <i class="fa-solid fa-plus" style="color: #2797cb;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #2797cb;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <div class="select">
+                                                <input type="checkbox" id="tre-em" name="tre-em" value="">
+                                                <label for="tre-em">Trẻ em</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="me" name="me" value="">
+                                                <label for="me">Mẹ</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="cha" name="cha" value="">
+                                                <label for="cha">Cha</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="lon-tuoi" name="lon-tuoi" value="">
+                                                <label for="lon-tuoi">Người lớn tuổi</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #a66730;">Vùng miền</h3>
+                                        <i class="fa-solid fa-plus" style="color: #a66730;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #a66730;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <div class="select">
+                                                <input type="checkbox" id="mien-bac" name="mien-bac" value="">
+                                                <label for="mien-bac">Bắc</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="mien-trung" name="mien-trung" value="">
+                                                <label for="mien-trung">Trung</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="mien-nam" name="mien-nam" value="">
+                                                <label for="mien-nam">Nam</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="chau-a" name="chau-a" value="">
+                                                <label for="chau-a">Món Á</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="chau-au" name="chau-au" value="">
+                                                <label for="chau-au">Món Âu</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="line-box">
+                                    <div class="title-line">
+                                        <h3 style="color: #ff981e;">Xốt/Nước chấm</h3>
+                                        <i class="fa-solid fa-plus" style="color: #ff981e;"></i>
+                                        <i class="fa-solid fa-minus" style="color: #ff981e;"></i>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="item-line">
+                                            <h4>Nước chấm truyền thống</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="cham-chao" name="cham-chao" value="">
+                                                <label for="chau-chao">Chao</label>
+                                            </div>
+                                        </div>
+                                        <div class="item-line">
+                                            <h4>Nước chấm khác</h4>
+                                            <div class="select">
+                                                <input type="checkbox" id="bot-canh" name="cot-canh" value="">
+                                                <label for="bot-canh">Bột canh</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="nuoc-tuong" name="nuoc-tuong" value="">
+                                                <label for="nuoc-tuong">Nước tương</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="tuong-ca" name="tuong-ca" value="">
+                                                <label for="tuong-ca">Tương cà/Tương ớt</label>
+                                            </div>
+                                            <div class="select">
+                                                <input type="checkbox" id="cham-mayo" name="cham-mayo" value="">
+                                                <label for="cham-mayo">Manyonnaise</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn-box-search">Tìm công thức</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="content-container container">
+                <div class="content-row row">
+                    <div class="content-left col-8">
+                        <div class="heading-content-left">
+                            <h2>Xin chào! Tôi là Khánh đến từ Món Ăn Dinh Dưỡng</h2>
+                            <img src="/assets/img/k-heading-gioi-thieu.jpg" alt="">
+                            <p>Nấu ăn là một nghệ thuật và cũng là một niềm vui. Nấu ăn không chỉ giúp chúng ta bổ sung dinh dưỡng và sức khỏe, mà còn là cách thể hiện tình yêu và sự quan tâm đến người thân và bạn bè. Tuy nhiên, không phải ai cũng có kinh nghiệm và kỹ năng nấu ăn tốt. Đôi khi, chúng ta cũng muốn thử những món ăn mới lạ và đa dạng hơn. Vì vậy, chúng tôi đã xây dựng trang web hướng dẫn nấu ăn để chia sẻ những công thức, mẹo và bí quyết nấu ăn ngon và dễ dàng. Trang web của chúng tôi có nhiều loại món ăn khác nhau, từ món ăn Việt Nam truyền thống đến món ăn quốc tế hiện đại. Bạn có thể tìm kiếm món ăn theo tên, nguyên liệu, phương pháp nấu hoặc thời gian nấu. Bạn cũng có thể xem những video hướng dẫn chi tiết và sinh động, cùng với những hình ảnh minh họa đẹp mắt. Ngoài ra, bạn cũng có thể gửi những câu hỏi, góp ý hoặc chia sẻ những kinh nghiệm nấu ăn của mình với cộng đồng nấu ăn trên trang web. Chúng tôi hy vọng trang web hướng dẫn nấu ăn sẽ là người bạn đồng hành của bạn trong việc khám phá và thưởng thức những món ăn ngon. Hãy cùng nấu ăn và chia sẻ niềm vui với trang web của chúng tôi nhé!</p>                            
+                        </div>
+                        <div class="recipe-content-left">
+                            <h3>Công thức từ Món Ăn Dinh Dưỡng</h3>
+                            <p>Các công thức nấu ăn của Món Ăn Dinh Dưỡng là những hướng dẫn chi tiết và dễ hiểu để bạn có thể làm ra những món ăn ngon và hấp dẫn. Các công thức nấu ăn được chia thành nhiều danh mục khác nhau, như món chay, món mặn, món tráng miệng, món ăn sáng, món ăn vặt, món ăn theo mùa, món ăn theo vùng miền, món ăn quốc tế, và còn nhiều hơn nữa. Bạn có thể lựa chọn món ăn theo sở thích, khẩu vị, nguyên liệu có sẵn, hoặc thời gian nấu. Mỗi công thức nấu ăn đều có những thông tin cần thiết, như danh sách nguyên liệu, số lượng khẩu phần, thời gian nấu, độ khó, và các bước nấu cụ thể. Bạn cũng có thể xem những hình ảnh minh họa cho mỗi bước nấu, hoặc xem video hướng dẫn nấu ăn trực quan và sinh động. Các công thức nấu ăn của trang web hướng dẫn nấu ăn được biên soạn và kiểm duyệt bởi những đầu bếp chuyên nghiệp và những người yêu nấu ăn. Các công thức nấu ăn đều được thử nghiệm và đánh giá trước khi đăng tải, để đảm bảo chất lượng và độ tin cậy. Bạn cũng có thể góp ý, bình luận, hoặc đánh giá các công thức nấu ăn trên trang web, để chia sẻ kinh nghiệm và cảm nhận của mình với cộng đồng nấu ăn. Các công thức nấu ăn của trang web hướng dẫn nấu ăn là nguồn tài liệu hữu ích và phong phú cho bạn trong việc học hỏi và sáng tạo những món ăn ngon. Hãy cùng khám phá và thử nghiệm các công thức nấu ăn của trang web hướng dẫn nấu ăn nhé!</p>
+                        </div>
+                        <div class="partnership">
+                            <h3>We Offer You Partnership</h3>
+                            <p>Chúng tôi mong muốn được hợp tác với các thương hiệu và sản phẩm mà chúng tôi tin tưởng. Hãy gửi thư cho chúng tôi ngay hôm nay!</p>
+                            <a href="">Liên hệ</a>
+                        </div>
+                    </div>
+                    <div class="content-right col-4">
+                        <div class="latest-recipe">
+                            <h3>Công thức mới</h3>
+                            <div class="recipe">
+                                <div class="recipe-left">
+                                    <a href="">
+                                        <img src="/assets/img/k-bacon-cuon-hanh-tay-pho-mai-00.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="recipe-right">
+                                    <a href="">
+                                        <div class="text">
+                                            <div class="name">
+                                                <p>Bacon cuộn hành tây phô mai</p>
+                                            </div>
+                                            <div class="about">
+                                                <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                                <p class="like"><i class="fa-regular fa-heart"></i>28</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe">
+                                <div class="recipe-left">
+                                    <a href="">
+                                        <img src="/assets/img/k-salad-ca-hoi-xong-khoi.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="recipe-right">
+                                    <a href="">
+                                        <div class="text">
+                                            <div class="name">
+                                                <p>Salad cá hồi xông khói</p>
+                                            </div>
+                                            <div class="about">
+                                                <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                                <p class="like"><i class="fa-regular fa-heart"></i>59</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe">
+                                <div class="recipe-left">
+                                    <a href="">
+                                        <img src="/assets/img/k-ga-ac-tiem-thuoc-bac.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="recipe-right">
+                                    <a href="">
+                                        <div class="text">
+                                            <div class="name">
+                                                <p>Gà ác tiềm thuốc bắc</p>
+                                            </div>
+                                            <div class="about">
+                                                <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                                <p class="like"><i class="fa-regular fa-heart"></i>88</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe">
+                                <div class="recipe-left">
+                                    <a href="">
+                                        <img src="/assets/img/k-ca-hoi-chien-xot-xoai.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="recipe-right">
+                                    <a href="">
+                                        <div class="text">
+                                            <div class="name">
+                                                <p>Cá hồi chiên xốt xoài</p>
+                                            </div>
+                                            <div class="about">
+                                                <p class="ration"><i class="fa-regular fa-user"></i>4 người</p>
+                                                <p class="like"><i class="fa-regular fa-heart"></i>67</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <h3>Thể loại</h3>
+                            <div class="categories-row row">
+                                <div class="item-categories col-4">
+                                    <img src="/assets/img/k-categories-img-1.png" alt="">
+                                    <p>Phổ biến</p>
+                                </div>
+                                <div class="item-categories col-4">
+                                    <img src="/assets/img/k-categories-img-2.png" alt="">
+                                    <p>Pizza</p>
+                                </div>
+                                <div class="item-categories col-4">
+                                    <img src="/assets/img/k-categories-img-3.png" alt="">
+                                    <p>Thịt</p>
+                                </div>
+                                <div class="item-categories col-4">
+                                    <img src="/assets/img/k-categories-img-4.png" alt="">
+                                    <p>Bữa trưa</p>
+                                </div>
+                                <div class="item-categories col-4">
+                                    <img src="/assets/img/k-categories-img-5.png" alt="">
+                                    <p>Rau</p>
+                                </div>
+                                <div class="item-categories col-4">
+                                    <img src="/assets/img/k-categories-img-6.png" alt="">
+                                    <p>Đồ ngọt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <!-- FOOTER --> 
+        <div class="footer">
+            <div class="footer-top">
+                <ul>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Hỏi đáp</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Điều khoản sử dụng</a></li>
+                </ul>
+            </div>
+            <div class="footer-bot">
+                <p>Copyright © 2021 • Ajinomoto Vietnam • All rights reserved</p>
+                <img src="/assets/img/dmca-badge-w200-5x1-09.png" alt="">
+            </div>
+        </div>
+        <!-- FOOTER -->
+    </div>
+    <script src="/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    
+</body>
+</html>
