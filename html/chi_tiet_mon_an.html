@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
+      <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/trang_chu.css">
-    <link rel="stylesheet" href="/assets/css/grid.css">
-    <link rel="stylesheet" href="/assets/css/KeHoachNauAn/goiY.css">
-    <title>Kế hoạch nấu ăn</title>
+    <link rel="stylesheet" href="/assets/css/chi_tiet_mon_an.css">
+    <title>Trang chủ dinh dưỡng</title>
 </head>
 <body>
     <div class="main">
         <!-- HEADER -->
-          <div class="header">
+        <div class="header">
             <div class="header-top container">
                 <div class="logo-header">
                     <a href="/html/trang_chu.html"></a>
@@ -438,142 +443,155 @@
         </div>
         <!-- HEADER -->
         <!-- CONTENT -->
-        <!-- navbarkehoach -->
-            <div id="content">
-                <ul class="navbarkehoach">
-                    <li class="active">
-                        <a href="#">
-                            <img src="/assets/img/T-icon1.webp" alt="">
-                            <span>Món ngon mỗi ngày gợi ý</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/html/KeHoachNauAn/CT_yeuthich.html">
-                            <img src="/assets/img/T-icon2.webp" alt="">
-                            <span>Công thức yêu thích</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/html/KeHoachNauAn/motTuan.html">
-                            <img src="/assets/img/T-icon3.webp" alt="">
-                            <span>Một tuần của bạn</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <!-- headerGoiy -->
-                <div class="header-goiY grid wide">
-                    <div class="row-goiY row">
-                        <div class="col l-9">
-                            <div class="col9-goiY">
-                                <img src="/assets/img/T-icon4.webp" alt="">
-                                <h1>Món Ngon Mỗi Ngày gợi ý</h1>
-                                <div class="icon-social">
-                                    <span>Chia sẻ:</span>
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                                </div>
-                                <p class="col9-text">Không tốn thời gian suy nghĩ "Hôm nay ăn gì?" - Cùng lên kế hoạch nấu ăn cho cả tuần để vào bếp nhàn tênh!</p>
-                                <div class="tool">
-                                    <div class="row">
-                                        <div class="col l-2">
-                                            <div class="col2-icon">
-                                                <i class="fa-solid fa-arrow-left"></i>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col l-4">
-                                            <div class="date row">
-                                                <div class="col l-3">
-                                                    <span>Chọn</span>
-                                                </div>
-                                                <div class="col l-9">
-                                                    <input type="date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col l-6">
-                                            <div class="col6-kehoach">
-                                                <a href="">
-                                                    <span>Tự lên kế hoạch tuần mới</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="content">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-8 l-o-2">
+                        <div class="col-detail">
+                            <h1>Lẩu Thái đầu cá lóc bông</h1>
+                            <div class="view">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>273 lượt xem</span>
                             </div>
+                            <iframe src="https://www.youtube.com/embed/TVKx6Oqn1UY?si=dkTXd3J6FlmgmFJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+                    </div>
+                </div>
+                <!-- detail-note -->
+                <div class="row l-8 l-o-2 detail-note">
+                    <ul>
+                        <li>
+                            <div class="top">
+                                <img src="/assets/img/T-detail-icon1.webp" alt="">
+                            </div>
+                            <br>
+                            <div class="bot">
+                                <span>Dễ</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span class="number">4</span> người 
+                            </div>
+                            <br>
+                            <div class="bot">
+                                <span>Khẩu phần</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top">
+                                <i class="fa-regular fa-heart"></i> 
+                            </div>
+                            <br>
+                            <div class="bot">
+                                <span>Yêu thích</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <!-- gioi thieu mon an -->
+                <div class="row l-8 l-o-2">
+                    <p>Lẩu Thái là món ăn đã rất quen thuộc đối với ẩm thực người Việt. Món lẩu có vị chua cay hôm nay sẽ có thêm vị mới với nguyên liệu chính là cá lóc bông kết hợp với sả, thơm và lá chúc thơm ngây ngất, đổi vị cho gia đình nhé.</p>
+                    <p class="alert alert-info">🫕 Xem thêm <a title="món lẩu ngon" href="">món lẩu ngon</a></p>
+                </div>
 
-                        <div class="col l-3">
-                            <div class="col3-img">
-                                <img src="/assets/img/T-img_goiY1.webp" alt="">
+                <!-- Nguyên liệu -->
+                <div class="row l-8 l-o-2 nguyenlieu margin-bot">
+                    <div class="div-title">
+                        <img src="/assets/img/T-detail-icon2.webp" alt="">
+                        <span>Nguyên liệu</span>
+                        <hr>
+                    </div>
+                    <i>M: muỗng canh - m: muỗng cafe</i>
+                    <div class="block-nguyenlieu">
+                        <ul>
+                            <li><span>Đầu cá lóc to: 2 cái 	(Thêm trứng và ruột cá)</span></li>
+                            <li><span>Sả cây: 50 g </span></li>
+                            <li><span>Lá chúc: 6 lá </span></li>
+                            <li><span>Thơm: 1/4 trái </span></li>
+                            <li><span>Mẹt tre 25cm, lót lá chuối </span></li>
+                            <li><span>Nấm rơm búp, nấm kim châm: 100g mỗi loại </span></li>
+                            <li><span>ĂN KÈM:	Bông so đũa, cọng súng, kèo nèo, cà chua, rau nhút, rau muống cọng, bông điên điển, rau thơm, cần tàu, rau om, ngò gai	</span></li>
+                            <li><span>Gia vị: Ớt hiểm xanh đỏ, nước mắm, hạt nêm, dầu ăn, ớt hiểm băm, tỏi băm	</span></li>	
+                            <li class="giavi">
+                                <a href="" title="Gia vị nêm sẵn Aji-Quick® Lẩu Thái"><b>Gia vị nêm sẵn Aji-Quick® Lẩu Thái</b> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- soche -->
+                <div class="row l-8 l-o-2 margin-bot">
+                    <div class="div-title">
+                        <img src="/assets/img/T-detail-icon3.webp" alt="">
+                        <span>SƠ CHẾ</span>
+                        <hr>
+                        <p>Sơ chế đầu cá và ruột cá cho thật sạch. Trứng cá rửa sạch ướp sơ đầu cá với 1/2M hạt nêm Aji-ngon He, 1 trái ớt hiểm băm. Phi sả đập dập cho thơm. Tắt lửa cho đầu cá + ruột + trứng cá vào, xốc sơ cho thấm mùi thơm rồi trút ra.</p>
+                    </div>
+                </div>
+
+                <!-- thuc hien -->
+                <div class="row l-8 l-o-2 margin-bot">
+                    <div class="div-title">
+                        <img src="/assets/img/T-detail-icon4.webp" alt="">
+                        <span>thực hiện</span>
+                        <hr>
+                        <p>Sơ chế đầu cá và ruột cá cho thật sạch. Trứng cá rửa sạch ướp sơ đầu cá với 1/2M hạt nêm Aji-ngon He, 1 trái ớt hiểm băm. Phi sả đập dập cho thơm. Tắt lửa cho đầu cá + ruột + trứng cá vào, xốc sơ cho thấm mùi thơm rồi trút ra.</p>
+                        <p>Bày các loại rau và nấm kim châm ra mẹt tre cùng với nồi nước Lẩu. Khi ăn cho lần lượt các loại rau vào đun nước dùng sôi cho đầu cá trở lại nước dùng lẩu cho nóng. Xong múc đầu cá ra dĩa, cho rau thơm vào nước lẩu.</p>
+                    </div>
+                </div>
+
+                <!-- cachdung -->
+                <div class="row l-8 l-o-2 margin-bot">
+                    <div class="div-title">
+                        <img src="/assets/img/T-detail-icon4.webp" alt="">
+                        <span>Cách dùng</span>
+                        <hr>
+                        <p> Ăn kèm bún và nước mắm ớt.</p>
+                    </div>
+                </div>
+
+                <!-- machnho -->
+                <div class="row l-8 l-o-2 margin-bot">
+                    <div class="div-title">
+                        <img src="/assets/img/T-detail-icon5.webp" alt="">
+                        <span>Mách nhỏ</span>
+                        <hr>
+                        <div>
+                            <p>✅ Phi sả để đệm mùi cho đầu cá, trứng và lòng cá không bị tanh.</p>
+                            <p>✅ Cho cá vào sau khi nêm nước dùng để vị chua khử tanh cho cá và hài hòa hương vị.</p>
+                            <p>✅ Có thể thêm nấm các loại ăn cùng, tuỳ theo ý thích.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- comment -->
+                <div class="row l-8 l-o-2 margin-bot">
+                    <h4>Bình luận</h4>
+                    <hr>
+                    <div class="comment"><textarea cols="10" class="form-control" rows="4" placeholder="Viết bình luận..." id="message" name="message"></textarea></div>
+                    <div class="info">
+                        <div class="row row-comment">
+                            
+                            <div class="col l-5">
+                                <input type="text" placeholder="Họ tên">
+                            </div>
+                            <div class="col l-5">
+                                <input type="email" placeholder="email">
+                            </div>
+                            <div class="col l-2">
+                                <div class="send">
+                                    <span>Gửi đi</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- table-schedule-->
-                <div class="table-schedule grid wide">
-                    <div class="row">
-                        <div class="col l-10">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Thứ hai <br> 23/10/2023</th>
-                                        <th>Thứ ba <br> 24/10/2023</th>
-                                        <th>Thứ tư <br> 25/10/2023</th>
-                                        <th>Thứ năm <br> 26/10/2023</th>
-                                        <th>Thứ sáu <br> 27/10/2023</th>
-                                        <th>Thứ bảy <br> 28/10/2023</th>
-                                        <th>Chủ nhật <br> 29/10/2023</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr class="sang">
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                        <td>Buổi sáng</td>
-                                    </tr>
-                                    <tr class="trua">
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                        <td>Buổi trưa</td>
-                                    </tr>
-                                    <tr class="toi">
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                        <td>Buổi tối</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col l-2">
-                            <div class="CT-daxem">
-                                <span>Công thức đã xem</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </div>
         <!-- CONTENT -->
-
         <!-- FOOTER --> 
         <div class="footer">
             <div class="footer-top">
@@ -592,6 +610,40 @@
         <!-- FOOTER -->
     </div>
     <script src="/jquery/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.eat-today-slider').slick({
+                slidesToShow: 4,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToScroll: 1,
+                prevArrow:"<button type='button' class='slick-prev pull-left btn-slide btn-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next pull-right btn-slide btn-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+        });
+        $(document).ready(function(){
+            $('.subtances-slider').slick({
+                slidesToShow: 2,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToScroll: 1,
+                prevArrow:"<button type='button' class='slick-prev pull-left btn-slide btn-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next pull-right btn-slide btn-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+        });
+    </script>
 </body>
 </html>
