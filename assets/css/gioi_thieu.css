@@ -1,0 +1,132 @@
+.content{
+    /* background-color: #f0efea; */
+    padding: 50px 0;
+}
+.content-left .heading-content-left h2{
+    font-size: 50px;
+    padding: 30px 0;
+    color: #198f00;
+}
+.content-left .heading-content-left img{
+    width: 100%;
+}
+.content-left .heading-content-left p{
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: justify;
+}
+.content-left .recipe-content-left h3{
+    margin-top: 50px;
+    color: #198f00;
+}
+.content-left .recipe-content-left p{
+    text-align: justify;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.content-left .partnership{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237 237 237);
+}
+.content-left .partnership h3{
+    font-size: 22px;
+    margin: 0
+}
+.content-left .partnership p{
+    margin: 0;
+}
+.content-left .partnership a{
+    display: block;
+    background-color: #198f00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    white-space: nowrap;
+    transition: all .2s ease;
+}
+.content-left .partnership a:hover{
+    opacity: 0.7;
+}
+.content-right{
+    margin-top: 30px;
+}
+.content-right .latest-recipe,
+.content-right .categories{
+    border: 1px solid #e7e4e4;
+    position: relative;
+    padding-top: 30px;
+}
+.content-right h3{
+    font-size: 18px;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #198f00;
+}
+.content-right .recipe{
+    padding: 20px;
+    display: flex;
+    transition: all .2s ease;
+}
+.content-right .recipe:hover{
+    opacity: 0.8;
+}
+.content-right .recipe a{
+    text-decoration: none;
+}
+.content-right .recipe-left{
+    width: 40%;
+}
+.content-right .recipe-right{
+    width: 60%;
+}
+.content-right .recipe-left img{
+    width: 100%;
+}
+.content-right .recipe-right .about{
+    display: flex;
+}
+.recipe-right {
+    padding: 8px 16px;
+    background-color: #198f00;
+}
+.recipe-right .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.recipe-right .name p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+.recipe-right .about p{
+    margin: 0 16px 0 0;
+    color: #fff;
+}
+.categories{
+    margin-top: 50px;
+}
+.categories .item-categories{
+    text-align: center;
+}
+.categories .item-categories :hover{
+    cursor: pointer;
+}
+.categories .item-categories img{
+    transition: all .2s ease;
+}
+.categories .item-categories:hover img{
+    transform: translateY(-10%);
+}
+.categories .item-categories p{
+    color: #198f00;
+}
