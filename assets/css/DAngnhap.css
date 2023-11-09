@@ -1,0 +1,575 @@
+:root {
+    /* Color */
+    --color-white: #fff;
+    --color-blue: rgb(0, 117, 255);
+    --color-black: #000;
+
+    /* Font-size */
+    --fs-14: 0.875rem;
+
+    /* Border-radius */
+    --br-6: 6px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    color: var(--color-white);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 1.6px;
+    background-image: url("../img/body-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+/* Global CSS */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url("../img/body-background.png");
+    background-position: right;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(245, 245, 245, 1);
+}
+
+.nexus-wh-100 {
+    width: 100%;
+    height: 100%;
+}
+
+.nexus-btn {
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: var(--br-6);
+    padding: 3px 5px;
+}
+
+.nexus-warning {
+    color: #ff0000;
+}
+
+/* Nexus Side Bar */
+.nexus-sideBar {
+    display: inline-block;
+    width: 23%;
+    height: 100vh;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nexus-sideBar__container {
+    height: 100%;
+    background: linear-gradient(127.09deg,
+            rgba(6, 11, 40, 0.94) 19.41%,
+            rgba(10, 14, 35, 0.49) 76.65%);
+    backdrop-filter: blur(120px);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.nexus-sideBar-top {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.nexus-sideBar hr {
+    flex-shrink: 0;
+    border-top: 0px solid rgba(0, 0, 0, 0.08);
+    border-right: 0px solid rgba(0, 0, 0, 0.08);
+    border-left: 0px solid rgba(0, 0, 0, 0.08);
+    height: 0.0625rem;
+    margin: 10px 0px;
+    border-bottom: none;
+    opacity: 0.25;
+    background-color: transparent;
+    background-image: linear-gradient(to right,
+            rgba(0, 117, 255, 0),
+            rgb(255, 255, 255),
+            rgba(255, 255, 255, 0)) !important;
+}
+
+.sideBar-part-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 20px;
+}
+
+.sideBar-part-list li {
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+.sideBar-active {
+    padding: 10px 15px !important;
+    background: rgb(26, 31, 55);
+    border-radius: 15px;
+}
+
+.sideBar-active i {
+    background: rgb(0, 117, 255) !important;
+    color: var(--color-white) !important;
+}
+
+.sideBar-part-list a {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.sideBar-part-list i {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    color: rgb(0, 117, 255);
+    background: rgb(26, 31, 55);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(20, 20, 20, 0.12) 0rem 0.25rem 0.375rem -0.0625rem,
+        rgba(20, 20, 20, 0.07) 0rem 0.125rem 0.25rem -0.0625rem;
+    margin-right: 10px;
+}
+
+.nexus-sideBar-signOut {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.nexus-sideBar-signOut .btn-signOut {
+    padding: 0;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.nexus-sideBar-signOut .btn-signOut i {
+    margin-right: 5px;
+}
+
+/* Nexus sidebar dashboard */
+.sideBar-dashboard {
+    position: relative;
+}
+
+.sideBar-dashboard .dashboard-menu {
+    display: none;
+    padding: 20px 20px 0 25%;
+}
+
+.sideBar-dashboard .dashboard-menu li {
+    display: block;
+}
+
+.sideBar-dashboard .dashboard-menu li i {
+    background-color: rgb(26, 31, 55) !important;
+    margin: 0;
+    transition: all .2s ease;
+}
+
+.sideBar-dashboard .dashboard-menu li:hover i {
+    margin-right: 10px;
+}
+
+/* Nexus dashboard */
+.nexus-dashboard {
+    height: 100vh;
+    padding: 15px 15px 15px 23%;
+    overflow-y: auto;
+}
+
+.nexus-dashboard-container {
+    width: 100%;
+}
+
+/* Nexus dashboard header */
+.nexus-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(127.09deg,
+            rgba(6, 11, 40, 0.94) 19.41%,
+            rgba(10, 14, 35, 0.49) 76.65%);
+    backdrop-filter: blur(120px);
+    border-radius: 20px;
+}
+
+.nexus-dashboard-header .header-welcome {
+    font-weight: 600;
+}
+
+.nexus-dashboard-header .header-welcome span {
+    font-size: 30px;
+}
+
+.nexus-dashboard-header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.nexus-dashboard-header .header-searchBar {
+    width: 50%;
+    padding: 10px 15px 10px 25px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.nexus-dashboard-header .header-searchBar input {
+    width: 93%;
+    height: 30px;
+    font-size: var(--fs-14);
+    border: none;
+}
+
+.nexus-dashboard-header .header-searchBar .btn-search {
+    padding: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+.nexus-dashboard-header .header-notify {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 117, 255);
+    border-radius: 50%;
+    box-shadow: rgba(20, 20, 20, 0.12) 0rem 0.25rem 0.375rem -0.0625rem,
+        rgba(20, 20, 20, 0.07) 0rem 0.125rem 0.25rem -0.0625rem;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nexus-dashboard-header .header-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.nexus-dashboard-header .header-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* Nexus Dashboard Main */
+/* Dashboard Main Top */
+.dashboard-main-top {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px;
+}
+
+.dashboard-main-nav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-main-nav-item {
+    width: calc((100% - 30px) / 3);
+    height: 100%;
+    background: linear-gradient(127.09deg,
+            rgba(6, 11, 40, 0.94) 19.41%,
+            rgba(10, 14, 35, 0.49) 76.65%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dashboard-main-nav-item .nav-item-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-main-nav-item .nav-item-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dashboard-main-nav-item .nav-item-icon {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.dashboard-main-nav-item .nav-item-quantity {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.dashboard-main-nav-item .nav-item-bottom {
+    font-size: var(--fs-14);
+}
+
+.dashboard-main-nav-item .nav-item-bottom i {
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.dashboard-main-nav-item:hover .nav-item-bottom i {
+    transform: translateX(5px);
+}
+
+.dashboard-main-calendar {
+    width: calc((40% - 15px));
+    height: 100%;
+    background: linear-gradient(127.09deg,
+            rgba(6, 11, 40, 0.94) 19.41%,
+            rgba(10, 14, 35, 0.49) 76.65%);
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    z-index: 3;
+}
+
+.dashboard-main-calendar .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-main-calendar .current-date {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dashboard-main-calendar .calendar-angle {
+    border: none;
+    background: transparent;
+    width: 24px;
+    color: #fff;
+}
+
+.dashboard-main-calendar .calendar-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.dashboard-main-calendar .calendar-main li {
+    color: rgba(255, 255, 255, 0.9);
+    width: calc(100% / 7);
+    font-weight: 500;
+}
+
+.dashboard-main-calendar .calendar-weeks {
+    margin-top: 10px;
+}
+
+.dashboard-main-calendar .calendar-days {
+    margin-top: 5px;
+    height: 135px;
+}
+
+.dashboard-main-calendar .calendar-days li {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-main-calendar .calendar-days .active {
+    position: relative;
+    font-weight: 600;
+}
+
+.dashboard-main-calendar .calendar-days .active::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 27px;
+    height: 27px;
+    top: 1px;
+    background-color: rgb(0, 117, 255);
+    border-radius: 50%;
+}
+
+.dashboard-main-calendar .calendar-days .inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.dashboard-main-bottom {
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-main-bottom-left {
+    width: calc(70% - 15px / 2);
+    height: 100%;
+    background: linear-gradient(127.09deg,
+            rgba(6, 11, 40, 0.94) 19.41%,
+            rgba(10, 14, 35, 0.49) 76.65%);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.nexus-dashboard-table {}
+
+.nexus-dashboard-table .dashboard-table-top {
+    margin-bottom: 15px;
+}
+
+.nexus-dashboard-table .dashboard-table-top .table-name {
+    font-weight: 600;
+}
+
+.nexus-dashboard-table .dashboard-table-top .table-desc {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nexus-dashboard-table .dashboard-table-top .table-desc i {
+    font-size: 11px;
+    margin-right: 3px;
+    color: var(--color-blue);
+    opacity: 0.8;
+}
+
+.nexus-dashboard-table .dashboard-table-main {}
+
+.nexus-dashboard-table .dashboard-table-main table {
+    width: 100%;
+}
+
+.nexus-dashboard-table .dashboard-table-main tr:not(:last-child) {
+    border-bottom: 0.0625rem solid rgb(45, 55, 72);
+}
+
+.nexus-dashboard-table .dashboard-table-main th {
+    font-size: 9px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding: 0 5px 5px 0;
+}
+
+.nexus-dashboard-table .dashboard-table-main tbody tr {}
+
+.nexus-dashboard-table .dashboard-table-main td {
+    font-size: 11px;
+    padding: 8px 0;
+}
+
+.dashboard-main-bottom-right {
+    width: calc(30% - 15px / 2);
+    height: 100%;
+    background: linear-gradient(127.09deg,
+            rgba(6, 11, 40, 0.94) 19.41%,
+            rgba(10, 14, 35, 0.49) 76.65%);
+    border-radius: 20px;
+}
+
+.dashboard-ranking {
+    padding: 15px;
+}
+
+.ranking-top {
+    text-align: center;
+}
+
+.ranking-top-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.ranking-item-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.ranking-item-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* .nexus-dashboard-profile .card{
+  color: #fff;
+  background: linear-gradient(
+    127.09deg,
+    rgba(6, 11, 40, 0.94) 19.41%,
+    rgba(10, 14, 35, 0.49) 76.65%
+  );
+} */
