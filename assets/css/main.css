@@ -93,8 +93,9 @@
     z-index: 11;
 }
 .user-top-header-Nhat{
-    height:12px ;
-    margin: 0 4px;
+        height: 12px;
+        margin: 0 4px;
+        width: 12.46px;
 }
 .nav-bar .sub-nav li{
     padding: 8px 28px 8px 0;
