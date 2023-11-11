@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/Admin/home.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="main">
+        <div class="row full-screen">
+            <div class="col-2 nav-bar-left">
+                <ul class="menu">
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-gauge-high"></i>Dashboard
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-gears"></i>Comporent
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-book"></i>Elemenet
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-location-dot"></i>Map
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-regular fa-file-lines"></i>Page
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-chart-line"></i>Chart
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-envelope-open-text"></i>Mailbox
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="item-menu">
+                            <i class="fa-solid fa-gear"></i>System
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-10 content">
+                <div class="cover">
+                    <div class="header">
+                        <div class="header-left">
+                            <nav class="navbar bg-body-tertiary search-left">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand"><img src="/assets/img/logo.jpg" alt=""></a>
+                                  <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </form>
+                                </div>
+                              </nav>
+                        </div>
+                        <div class="header-right">
+                            <div class="thong-bao">
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-bell"></i>
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="ca-nhan">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Dinh Duc Khanh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tong-quat container">
+                        <div class="row">
+                            <div class="item-tong-quat col" style="background-color: greenyellow;">
+                                <div class="text">
+                                    <h1>125</h1>
+                                    <h6>Người dùng</h6>
+                                    <p>Other hand, we denounce</p>
+                                </div>
+                                <div class="icon-item">
+                                    <i class="fa-regular fa-file-lines" style="color: greenyellow;"></i>
+                                </div>
+                            </div>
+                            <div class="item-tong-quat col" style="background-color: orange;">
+                                <div class="text">
+                                    <h1>203</h1>
+                                    <h6>Lượt truy cập</h6>
+                                    <p>Other hand, we denounce</p>
+                                </div>
+                                <div class="icon-item">
+                                    <i class="fa-solid fa-eye" style="color: orange;"></i>
+                                </div>
+                            </div>
+                            <div class="item-tong-quat col" style="background-color: blueviolet;">
+                                <div class="text">
+                                    <h1>13</h1>
+                                    <h6>Tin nhắn</h6>
+                                    <p>Other hand, we denounce</p>
+                                </div>
+                                <div class="icon-item">
+                                    <i class="fa-regular fa-envelope" style="color: blueviolet;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quan-ly-dinh-duong container">
+                        <h2>Dinh dưỡng</h2>
+                        <div class="table-dinh-duong">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Chế độ dinh dưỡng</th>
+                                    <th scope="col">Số công thức</th>
+                                    <th scope="col">Lượt truy cập</th>
+                                    <th scope="col" class="btn-dinh-duong">Thêm công thức</th>
+                                    <th scope="col" class="btn-dinh-duong">Xoá công thức</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Ăn kiêng</td>
+                                    <td>110</td>
+                                    <td>23</td>
+                                    <td class="btn-dinh-duong"><button>Thêm</button></td>
+                                    <td class="btn-dinh-duong"><button>Xoá</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Tăng năng lượng</td>
+                                    <td>100</td>
+                                    <td>34</td>
+                                    <td class="btn-dinh-duong"><button>Thêm</button></td>
+                                    <td class="btn-dinh-duong"><button>Xoá</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Tốt cho xương</td>
+                                    <td>200</td>
+                                    <td>56</td>
+                                    <td class="btn-dinh-duong"><button>Thêm</button></td>
+                                    <td class="btn-dinh-duong"><button>Xoá</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>Tốt cho da</td>
+                                    <td>222</td>
+                                    <td>45</td>
+                                    <td class="btn-dinh-duong"><button>Thêm</button></td>
+                                    <td class="btn-dinh-duong"><button>Xoá</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>Hỗ trợ miễn dịch</td>
+                                    <td>156</td>
+                                    <td>26</td>
+                                    <td class="btn-dinh-duong"><button>Thêm</button></td>
+                                    <td class="btn-dinh-duong"><button>Xoá</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>Hồi phục sau cảm</td>
+                                    <td>254</td>
+                                    <td>78</td>
+                                    <td class="btn-dinh-duong"><button>Thêm</button></td>
+                                    <td class="btn-dinh-duong"><button>Xoá</button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/bootstrap/bootstrap.min.js"></script>
+    <script src="/jquery/jquery-3.7.1.min.js"></script>
+</body>
+</html>
