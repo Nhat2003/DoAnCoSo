@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Món ngon mỗi ngày</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="/assets/css/signIn.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/DAngnhap.css">
+</head>
+
+<body>
+
+    <div class="nexus-sign">
+        <div class="row nexus-wh-100">
+            <div class="col-6">
+                
+            </div>
+            <div class="col-6">
+                <div class="sign-form signIn-form">
+                    <div class="sign-title">
+                    <h1 class="main-title">Món ngon mỗi ngày</h1>
+                </div>
+                    <form action="">
+                        <h3 class="sign-form-title">Sign In</h3>
+                        <div class="sign-input-field">
+                            <div class="sign-input-field-top">
+                                <label for="">Email or Username <span class="nexus-warning">*</span></label>
+                                <a href="./signUp.html" class="sign-link">Need an account? <span>Sign up</span></a>
+                            </div>
+                            <input type="text" name="" id="usernameField" placeholder="Email or Username">
+                        </div>
+                        <div class="sign-input-field">
+                            <div class="sign-input-field-top">
+                                <label for="">Password <span class="nexus-warning">*</span></label>
+                                <button class="nexus-btn btn-show" type="button" onclick="togglePasswordVisibility()"><i class="fa-solid fa-eye"></i> Show</button>
+                            </div>
+                            <input type="password" name="" id="passwordField" placeholder="Password">
+                        </div>
+                        <div class="msg-signIn-incorrect">Username or password incorrect.</div>
+                        <button type="button" class="nexus-btn btn-sign btn-signIn" onclick="controlSignIn()">Sign in</button>
+                        <div class="form-choose">
+                            <div class="form-choose-remember">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Remember me</label>
+                            </div>
+                            <a href="./forgotPass.html" class="form-choose-forgot-pass">Forgot password ?</a>
+                        </div>
+                        <div class="form-sign-other">
+                            <div class="sign-other-text">Continue with</div>
+                            <div class="sign-other-list">
+                                <button class="nexus-btn btn-sign-other"><img src="/assets/img/Nhat-facebook-icon (1).png" alt="Facebook Icon"></button>
+                                <button class="nexus-btn btn-sign-other"><img src="/assets/img/Nhat-facebook-icon (3).png" alt="Google Icon"></button>
+                                <button class="nexus-btn btn-sign-other"><img src="/assets/img/Nhat-facebook-icon (2).png" alt="Github Icon"></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS -->
+    <script src="../vendors/jquery/jquery-v371.min.js"></script>
+
+    <!-- Boostrap JS -->
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("passwordField");
+            var showButton = document.querySelector(".btn-show");
+
+            if (passwordField.type === "password" && passwordField.value !== "") {
+                passwordField.type = "text";
+                showButton.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Hide';
+            } else {
+                passwordField.type = "password";
+                showButton.innerHTML = '<i class="fa-solid fa-eye"></i> Show';
+            }
+        }
+
+        function controlSignIn(){
+            var dataUsernameField = document.getElementById("usernameField").value;
+            var dataPasswordField = document.getElementById("passwordField").value;
+            if (dataUsernameField === "admin" && dataPasswordField === "admin"){
+                window.location.href = "./trang_chu.html";
+            } else{
+                var messageIncorrect = document.querySelector(".msg-signIn-incorrect");
+                messageIncorrect.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
