@@ -100,8 +100,14 @@
         function controlSignIn(){
             var dataUsernameField = document.getElementById("usernameField").value;
             var dataPasswordField = document.getElementById("passwordField").value;
-            if (dataUsernameField === "admin" && dataPasswordField === "admin"){
+            if (dataUsernameField === "user" && dataPasswordField === "user"){
                 window.location.href = "./trang_chu.html";
+            } else{
+                var messageIncorrect = document.querySelector(".msg-signIn-incorrect");
+                messageIncorrect.style.display = "block";
+            }
+            if (dataUsernameField === "admin" && dataPasswordField === "admin"){
+                window.location.href = "./Admin/home.html";
             } else{
                 var messageIncorrect = document.querySelector(".msg-signIn-incorrect");
                 messageIncorrect.style.display = "block";
