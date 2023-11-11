@@ -1,0 +1,40 @@
+.account{
+    background-color: #f0efea;
+    margin-top: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.avatar img{
+    height: 90px;
+    border-radius: 50%;
+}
+.note{
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.line-col{
+    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.line-item{
+    color: #198f00;
+    border-bottom: 1px solid #198f00;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 230px;
+}
+.action-ttin{
+    display: flex;
+    justify-content: center;
+}
+.thongtin{
+    width: 60%;
+}
+#btn-update{
+    background-color: #198f00;
+    border: #198f00;
+    margin-bottom: 30px;
+}
