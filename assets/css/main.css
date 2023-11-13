@@ -35,11 +35,14 @@
     margin: 0;
     line-height: 1.2;
     font-weight: 700;
+   
 }
 .header-top .nav-header .nav-header-top{
     display: flex;
     justify-content: end;
-    padding: 8px 12px 8px 0;
+    padding: 8px 12px 1px 0;
+    align-items: center;
+    margin-right: 50px;
 }
 .nav-header .nav-header-top p{
     margin: 0;
@@ -79,7 +82,7 @@
 .nav-header-bot .nav-bar .nutrition-nav{
     position: relative;
 }
-.nav-header-bot .nav-bar .sub-nav{
+.nav-header-bot .nav-bar .sub-nav {
     position: absolute;
     display: none;
     padding: 0 16px;
@@ -88,6 +91,11 @@
     top: 100%;
     background-color: #e8e5e5;
     z-index: 11;
+}
+.user-top-header-Nhat{
+        height: 12px;
+        margin: 0 4px;
+        width: 12.46px;
 }
 .nav-bar .sub-nav li{
     padding: 8px 28px 8px 0;
@@ -296,3 +304,46 @@
     color: #fff;
 }
 /* FOOTER */
+
+/* Nhat */
+.nutrition-nav-Nhat{
+    position: relative;
+}
+.sub-nav-Nhat li{
+    list-style: none;
+    color: #000;
+    position: relative;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+.menu-user_nhat:hover li{
+    color: #198f00;
+}
+.menu-user_nhat:hover i {
+    color: #198f00;
+}
+.sub-nav-Nhat a{
+    text-decoration: none;
+
+}
+.sub-nav-Nhat{
+    position: absolute;
+    padding-left: 0;
+    width: 210px;
+    right: -1px;
+    display: none;
+    background-color: #e0e0e0;
+    z-index: 11;
+    box-shadow: #000;
+    cursor: pointer;
+}
+.menu-user_nhat{
+    align-items: center;
+}
+.menu-user_nhat>i{
+    color: #000;
+    padding-left: 5px;
+}
+
+
+

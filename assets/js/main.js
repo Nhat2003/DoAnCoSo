@@ -10,6 +10,13 @@ $(".nutrition-nav").mousemove(function(){
 $(".nutrition-nav").mouseleave(function(){
     $(".nutrition-sub").hide(100)
 })
+
+$(".nutrition-nav-Nhat").mousemove(function(){
+    $(".nutrition-sub-Nhat").show(200)
+})
+$(".nutrition-nav-Nhat").mouseleave(function(){
+    $(".nutrition-sub-Nhat").hide(100)
+})
 const listIcon = document.querySelectorAll(".line-box")
 for(const icon of listIcon){
     const titleLine = icon.querySelector(".title-line h3")
